@@ -16,6 +16,8 @@ import {
 let Student = localStorage.getItem("LoginedStudent");
 var today = new Date();
 let RightAnswerElement;
+let ResultObject;
+
 // <<<<<<<<<<<=====Creating Date Variabel==>>>>>>>>>>>>>>
 var dd = String(today.getDate()).padStart(2, "0");
 var mm = String(today.getMonth() + 1).padStart(2, "0"); //January is 0!
@@ -32,7 +34,12 @@ Minutes = Minutes < 10 ? "0" + Minutes : Minutes;
 var Timestr = Hours + ":" + Minutes + " " + ampm;
 today = yyyy + "-" + mm + "-" + dd;
 let NumberForQuestion;
-// let StudentNameValue;
+
+if (JSON.parse(localStorage.getItem("Results"))) {
+  ResultObject = JSON.parse(localStorage.getItem("Results"));
+} else {
+  ResultObject = {};
+}
 // ------Create Varibel For Question Number --------->>
 const ChapterNumber = () => {
   let Num = localStorage.getItem("ChapterNumber");
@@ -72,23 +79,43 @@ NextQuestionButton.addEventListener("click", () => {
     QuestionNumber("Next", Queston_number_Show);
     MainFunction();
   }
+  TotalNumberOfQuesiton = 4;
   if (Queston_number_Show == TotalNumberOfQuesiton) {
     NextQuestionButton.innerText = "Submit";
     NextQuestionButton.classList.replace("NextQuestion", "SubmitAnswers");
     let QuestionSubmitBtn = document.querySelector(".SubmitAnswers");
     QuestionSubmitBtn.addEventListener("click", () => {
-      StudentResultObject.QuestionType = localStorage.getItem("QuestionType");
-      StudentResultObject.TotalRightAnswer = RightAnswer();
-      StudentResultObject.Time = Timestr;
-      StudentResultObject.TotalQuestion = TotalNumberOfQuesiton;
-      if (StudentNameValue != undefined) {
-        StudentResultObject.StudentName = StudentNameValue;
+      // StudentResultObject.QuestionType = localStorage.getItem("QuestionType");
+      // StudentResultObject.TotalRightAnswer = RightAnswer();
+      // StudentResultObject.Time = Timestr;
+      // StudentResultObject.TotalQuestion = TotalNumberOfQuesiton;
+      // if (StudentNameValue != undefined) {
+      //   StudentResultObject.StudentName = StudentNameValue;
+      // }
+      // localStorage.setItem(
+      //   `${today}-${Student}`,
+      //   JSON.stringify(StudentResultObject)
+      // );
+      if (ResultObject[today] == null) {
+        ResultObject[today] = {};
       }
-      localStorage.setItem(
-        `${today}-${Student}`,
-        JSON.stringify(StudentResultObject)
-      );
-      window.open("ResultDisplay.html", "_self");
+      if (ResultObject[today][Timestr] == null) {
+        ResultObject[today][Timestr] = {};
+      }
+      ResultObject[today][Timestr][Student] = {};
+      ResultObject[today][Timestr][Student]["QuestionType"] =
+        localStorage.getItem("QuestionType");
+      ResultObject[today][Timestr][Student]["TotalRightAnswer"] = RightAnswer();
+      ResultObject[today][Timestr][Student]["TotalQuestion"] =
+        TotalNumberOfQuesiton;
+      ResultObject[today][Timestr][Student]["ChapterNumber"] =
+        localStorage.getItem("ChapterNumber");
+      if (StudentNameValue != undefined) {
+        ResultObject[today][Timestr][Student]["StudentName"] = StudentNameValue;
+      }
+      console.log(ResultObject);
+      localStorage.setItem("Results", JSON.stringify(ResultObject));
+      // window.open("ResultDisplay.html", "_self");
     });
   }
 });

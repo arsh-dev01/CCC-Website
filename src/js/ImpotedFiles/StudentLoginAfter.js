@@ -9,6 +9,7 @@ let ChapterButton = document.querySelectorAll(".ChapterButton");
 let ChapterMock = document.querySelector(".ChapterMock");
 let ChapterMCQ = document.querySelector(".ChapterMCQ");
 ChapterWiseBox.onclick = () => {
+  localStorage.setItem("QuestionType", "Chapter Wise");
   ChapterWisePopUp.style.display = "flex";
   localStorage.setItem("TestType", "MockTesting");
 };
