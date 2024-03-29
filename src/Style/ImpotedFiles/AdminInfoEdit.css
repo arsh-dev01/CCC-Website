@@ -1,0 +1,77 @@
+main {
+  width: 100vw;
+  height: 50vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .AdminInfoEditBox {
+  width: 40vw;
+  height: 40vw;
+  border-radius: 3vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(128, 128, 128, 0.37);
+  backdrop-filter: blur(4px);
+}
+main .AdminInfoEditBox h2 {
+  text-align: center;
+  letter-spacing: 0.1vw;
+  height: 5vw;
+  margin-top: 3vw;
+  margin-bottom: 4vw;
+}
+main .AdminInfoEditBox label {
+  font-size: 1.5vw;
+  height: 10vw;
+  position: relative;
+}
+.AdminEditInfoLabelSpanOne {
+  position: fixed;
+  left: 0.5vw;
+  top: 9vw;
+}
+.AdminEditInfoLabelSpanTwo {
+  position: fixed;
+  left: 0.5vw;
+  top: 19vw;
+}
+main .AdminInfoEditBox label input {
+  position: relative;
+  left: 8vw;
+  top: -4vw;
+  width: 24vw;
+  height: 2vw;
+  border-radius: 1vw;
+  border: none;
+  margin: 4vw 0;
+  background-color: transparent;
+  border-bottom: 2px solid beige;
+  padding: 1vw;
+  transform: scale(0.97);
+  margin-top: 2vw;
+  transition: all.3s;
+  transform-origin: center;
+}
+main .AdminInfoEditBox label input:focus {
+  background-color: rgba(168, 222, 255, 0.836);
+  outline-color: purple;
+  height: 4vw;
+  transform: scale(1);
+  margin-top: 0;
+}
+main .AdminInfoEditBox label input::placeholder {
+  text-align: center;
+}
+main .AdminInfoEditBox button {
+  padding: 1vw 1.5vw;
+  background-color: lightblue;
+  border: none;
+  border-radius: 1vw;
+  transition: all 0.2s;
+}
+main .AdminInfoEditBox button:hover {
+  transform: scale(1.1);
+  outline: 2px solid rebeccapurple;
+}

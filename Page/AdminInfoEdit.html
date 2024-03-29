@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Cache-control" content="no-cache" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Info Edit</title>
+    <link rel="stylesheet" href="../src/Style/LinkedFiles/Header.css" />
+    <link rel="stylesheet" href="../src/Style/LinkedFiles/AdminInfoEdit.css" />
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="../FontAwosome/css/all.min.css" />
+    <link rel="stylesheet" href="../FontAwosome/css/fontawesome.min.css" />
+  </head>
+  <body>
+    <header>
+      <div class="HeaderDublecatDiv">
+        <div class="HeaderContenar">
+          <div class="headerLogodiv">Code - Stack</div>
+          <nav class="Nav">
+            <a href="AfterStudentLogin.html" class="navBtn OLavel">Home</a>
+            <a href="#" class="navBtn CCC" >Report</a>
+            <a href="#" class="navBtn About">About</a>
+            <a href="StudentLoginspage.html" class="navBtn Admin">Logout</a>
+          </nav>
+        </div>
+      </div>
+      <script></script>
+    </header>
+    <main>
+      <div class="AdminEditBox">
+        <div class="AdminEditElementContaner">
+          <h2 class="AdminEditHadding">Edit Admin</h2>
+          <label for="" class="AdminInstitutNameLabel">
+            <input
+              type="text"
+              class="InsitutionName Focus"
+              placeholder="Enter Institution Name"
+            />
+            <!-- <span class="PlaceHolder">Enter Institution Name</span> -->
+          </label>
+          <label for="" class="AdminEditUserNameLabel">
+            <input
+              type="text"
+              class="AdminUserNameEdit Focus"
+              placeholder="Enter UserName"
+            />
+          </label>
+          <label for="" class="AdminEditPasswordlabel">
+            <input
+              type="password"
+              name=""
+              id="Password"
+              placeholder="Enter Password"
+              class="AdminPasswordEdit PasswordInput Focus"
+            />
+            <i
+              class="fa fa-eye-slash Password"
+              aria-hidden="true"
+              style="
+                transition: all 0.2s;
+                position: absolute;
+                right: 1.4vw;
+                cursor: pointer;
+                color: black;
+              "
+            ></i>
+          </label>
+          <label for="" class="AdminConformPasswordlabel">
+            <input
+              type="password"
+              name=""
+              id="ConformPassword"
+              placeholder="Enter Conform Password"
+              class="AdminPasswordConform PasswordInput2 Focus"
+            />
+            <i
+              class="fa fa-eye-slash Password2"
+              aria-hidden="true"
+              style="
+                transition: all 0.2s;
+                position: absolute;
+                right: 1.4vw;
+                cursor: pointer;
+                color: black;
+              "
+            ></i>
+          </label>
+          <button class="AdminEditSubmitButton">Submit</button>
+        </div>
+      </div>
+    </main>
+  </body>
+  <script>
+    let PasswordIcons = document.querySelector(".Password");
+    PasswordIcons.addEventListener("click", (e) => {
+      let PasswordInput = document.querySelector(".PasswordInput");
+      if (PasswordInput.type == "password") {
+        PasswordInput.type = "text";
+      } else {
+        PasswordInput.type = "password";
+      }
+      PasswordIcons.classList.toggle("fa-eye-slash");
+      PasswordIcons.classList.toggle("fa-eye");
+    });
+    let PasswordIcons2 = document.querySelector(".Password2");
+    PasswordIcons2.addEventListener("click", (e) => {
+      let PasswordInput2 = document.querySelector(".PasswordInput2");
+      if (PasswordInput2.type == "password") {
+        PasswordInput2.type = "text";
+      } else {
+        PasswordInput2.type = "password";
+      }
+      PasswordIcons2.classList.toggle("fa-eye-slash");
+      PasswordIcons2.classList.toggle("fa-eye");
+    });
+  </script>
+  <script
+    type="module"
+    src="../src/js/ImpotedFiles/WebsiteJavaScript.js"
+  ></script>
+  <script src="../src/js/ImpotedFiles/EditAdmin.js"></script>
+</html>

@@ -1,0 +1,73 @@
+@import url(../LinkedFiles/Color.css);
+* {
+  font-family: Arshnoorbold;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: var(--Whitest);
+}
+main {
+  width: 100vw;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ReportContiner {
+  position: relative;
+  width: 35vw;
+  height: 35vw;
+  border-radius: 2vw;
+  background-color: var(--Grayes);
+  border: 2px solid var(--SkyBlues);
+  color: var(--Whitest);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.ReportList {
+  list-style-type: none;
+}
+.ReportContiner h2 {
+  text-align: center;
+  position: relative;
+  /* bottom: 2vw; */
+  letter-spacing: 0.1vw;
+  pointer-events: none;
+}
+
+.ReportContiner ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-left: 2vw;
+}
+.ReportContiner ul li {
+  margin-top: 1vw;
+  width: 100%;
+  height: 2.5vw;
+  position: relative;
+}
+.ReportSubmitBtn {
+  /* width: 10vw; */
+  margin: 0 1vw;
+  padding: 1vw 2vw;
+  border-radius: 1vw;
+  border: none;
+  color: var(--InputOutlineColor1);
+  background-color: var(--SkyBlues);
+  cursor: pointer;
+}
+.TextArea {
+  margin: 0 1vw;
+  height: 5vw;
+  padding: .5vw 1vw;
+}
+.TextArea:focus {
+  outline: 2px solid var(--SkyBlues);
+}
+.TextArea::-webkit-scrollbar{
+  visibility: hidden;
+}

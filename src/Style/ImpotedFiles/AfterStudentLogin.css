@@ -1,0 +1,261 @@
+@import url(../LinkedFiles/Color.css);
+* {
+  font-family: ArshnoorBold;
+}
+body {
+  background: var(--Whites);
+}
+main {
+  width: 100vw;
+  height: 50vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .AfterStudentLoginContener {
+  width: 70vw;
+  height: 30vw;
+  border-radius: 2vw;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 5vw;
+  background-color: var(--Grayes);
+  transition: all 0.3s;
+  transform: scale(0.995);
+}
+main .AfterStudentLoginContener .PreviweForQuestion {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--Whitest);
+  width: 19vw;
+  height: 15vw;
+  border-radius: 3vw;
+  transition: all 0.2s;
+  transform: scale(0.97);
+  cursor: pointer;
+}
+
+main .AfterStudentLoginContener .PreviweForQuestion:hover {
+  transform: scale(1);
+  /* outline: 8px solid #42f4c5c9; */
+}
+
+main .AfterStudentLoginContener .CCC-CompleteBookQuestion:active {
+  transform: scale(0.98);
+}
+main .AfterStudentLoginContener .PreviweForQuestion img {
+  width: 6vw;
+}
+main .AfterStudentLoginContener .PreviweForQuestion h3 {
+  font-size: 1.5vw;
+  color: var(--Grayes);
+}
+main .AfterStudentLoginContener .ChapterWiseQuestion .ChaptersViewBox {
+  width: 18.8vw;
+  height: 22vw;
+  display: none;
+}
+main .AfterStudentLoginContener .ChapterWiseQuestion:hover .ChaptersViewBox {
+  display: grid;
+}
+main
+  .AfterStudentLoginContener
+  .ChapterWiseQuestion
+  .ChaptersViewBox
+  h5:last-child {
+  border-bottom-left-radius: 2vw;
+  border-bottom-right-radius: 2vw;
+}
+main .AfterStudentLoginContener .ChapterWiseQuestion .ChaptersViewBox h5 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  letter-spacing: 0.2vw;
+  transform: scale(1);
+}
+main .AfterStudentLoginContener .ChapterWiseQuestion .ChaptersViewBox h5:hover {
+  background-color: var(--Balackes);
+  color: var(--Whitest);
+}
+main
+  .AfterStudentLoginContener
+  .ChapterWiseQuestion
+  .ChaptersViewBox
+  h5:active {
+  transform: scale(0.97);
+}
+img {
+  width: 10vw;
+}
+
+.ChaptersPopBG {
+  width: 100%;
+  height: 100vh;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  backdrop-filter: blur(2px);
+  /* background-color: var(--Whitest); */
+}
+.ChaptersBox {
+  position: relative;
+  top: 3.4vw;
+  width: 45vw;
+  height: 40vh;
+  border-radius: 2vh;
+  background-color: var(--Whitest);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.ChaptersHadding {
+  color: var(--Whitest);
+  text-align: center;
+  pointer-events: none;
+}
+.ButtonBox {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat(3, auto);
+  gap: 3vw 5vw;
+  place-content: center;
+  place-items: center;
+}
+.ChapterButton {
+  border: none;
+  width: 8vw;
+  height: 5vh;
+  border-radius: 1vh;
+  cursor: pointer;
+  color: var(--Balackes);
+  outline: 2px solid var(--SkyBlues);
+  background-color: transparent;
+  transition: all 0.2s;
+}
+.ChapterButton:hover {
+  color: var(--Balackes);
+  background-color: var(--SkyBlues);
+}
+.ChapterButton:active {
+  transform: scale(0.98);
+}
+.TypeBox {
+  outline: 2px solid var(--SkyBlues);
+  width: 15vw;
+  border-radius: 1vw;
+  height: 5vh;
+  display: grid;
+  grid-template-columns: auto auto;
+  overflow: hidden;
+  position: relative;
+  bottom: 0.7vw;
+}
+.TypeBox div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: var(--Grayes);
+}
+.TypeBox div:not(.Mock):active {
+  transform: scale(0.98);
+}
+.Active {
+  transition: all 0.2s;
+  background-color: var(--Balackes);
+  color: var(--Whitest) !important;
+}
+.TotalQuesiton {
+  position: absolute;
+  right: 0.4vw;
+  top: 0.5vw;
+  background-color: transparent;
+  color: var(--SkyBlues);
+  border: 2px solid var(--SkyBlues);
+  cursor: pointer;
+}
+.TotalQuesiton option {
+  color: var(--Balackes);
+}
+.PopBack {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 800;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(1px);
+  /* background-color: #b3e09973; */
+}
+.BodyPop {
+  width: 30vw;
+  height: 25vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: var(--Whitest);
+  position: relative;
+  border-radius: 1vw;
+  z-index: 1000;
+  border: 3px solid var(--SkyBlues);
+}
+.TotalQuestionBox {
+  position: absolute;
+  top: 0.5vw;
+  right: 0.5vw;
+}
+.TotalQuestionBox select {
+  border: 2px solid gray;
+}
+
+.Box {
+  border-radius: 1vw;
+  width: 10vw;
+  height: 10vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.Box h3 {
+  font-size: 1.5vw;
+  color: var(--Balackes);
+}
+.Box button {
+  border: none;
+  padding: 1vh 1vw;
+  border-radius: 0.3vw;
+  cursor: pointer;
+  outline: 2px solid var(--SkyBlues);
+}
+.Box button:active {
+  transform: scale(0.98);
+}
+.Box button:hover {
+  background-color: var(--SkyBlues);
+}
+.MockPopUp i {
+  position: absolute;
+  top: 35%;
+  right: 34%;
+  width: 2vw;
+  height: 2vw;
+  display: grid;
+  place-content: center;
+  cursor: pointer;
+  display: none;
+
+  background-color: var(--Whitest);
+  border-radius: 50%;
+}

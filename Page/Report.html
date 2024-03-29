@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="wclassth=device-wclassth, initial-scale=1.0"
+    />
+    <title>Report</title>
+    <link rel="stylesheet" href="../src/Style/LinkedFiles/Report.css" />
+  </head>
+  <body>
+    <header>
+      <div class="HeaderDublecatDiv">
+        <div class="HeaderContenar">
+          <div class="headerLogodiv">Code - Stack</div>
+          <nav class="Nav">
+            <button
+              class="navBtn OLavel"
+              onclick="window.open('AfterStudentLogin.html','_self')"
+            >
+              Home
+            </button>
+            <button
+              class="navBtn Report"
+              onclick="window.open('Report.html','_self')"
+            >
+              Report
+            </button>
+            <button
+              class="navBtn About"
+              onclick="window.open('AfterStudentLogin.html','_self')"
+            >
+              About
+            </button>
+            <button
+              class="navBtn Admin"
+              onclick="window.open('StudentLoginspage.html','_self')"
+            >
+              Logout
+            </button>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="ReportContiner">
+        <h2 class="Report hadding">Report</h2>
+        <ul>
+          <li class="ReportList">
+            <label for="">
+              <input type="radio" value="off" name="Report" class="RadioBtn" />
+              <span class="ReportTextElement">Dulicate Question</span>
+            </label>
+          </li>
+          <li class="ReportList">
+            <label for="">
+              <input type="radio" value="off" name="Report" class="RadioBtn" />
+              <span class="ReportTextElement">Worng Answer</span>
+            </label>
+          </li>
+
+          <li class="ReportList">
+            <label for="">
+              <input type="radio" value="off" name="Report" class="RadioBtn" />
+              <span class="ReportTextElement"> Question is not Changing</span>
+            </label>
+          </li>
+          <li class="ReportList">
+            <label for="">
+              <input
+                type="radio"
+                value="off"
+                name="Report"
+                class="RadioBtn Other"
+              />
+              <span class="ReportTextElement">Other</span>
+            </label>
+          </li>
+          <li class="ReportList">
+            <label for="">
+              <input
+                type="radio"
+                value="off"
+                name="Report"
+                class="RadioBtn Glitch"
+              />
+              <span class="ReportTextElement">Glitch</span>
+            </label>
+          </li>
+        </ul>
+        <textarea name="" cols="40" class="TextArea"></textarea>
+        <button class="ReportSubmitBtn">Report</button>
+      </div>
+    </main>
+  </body>
+  <script type="module" src="../src/js/ImpotedFiles/Report.js"></script>
+  <link rel="stylesheet" href="../src/Style/LinkedFiles/Header.css " />
+  <script
+    type="module"
+    src="../src/js/ImpotedFiles/WebsiteJavaScript.js"
+  ></script>
+</html>

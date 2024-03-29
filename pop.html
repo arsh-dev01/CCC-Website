@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pop</title>
+  </head>
+  <body>
+    <div class="PopBack">
+      <style>
+        * {
+          margin: 0;
+          padding: 0;
+        }
+        .PopBack {
+          width: 100vw;
+          height: 100vh;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: #b3e09973;
+        }
+        .BodyPop {
+          width: 30vw;
+          height: 25vh;
+          outline: 2px solid gray;
+          display: flex;
+          justify-content: space-evenly;
+          align-items: center;
+          background-color: #f8f1e9;
+          position: relative;
+          border-radius: 1vw;
+        }
+        .TotalQuestionBox {
+          position: absolute;
+          top: 0.5vw;
+          right: 0.5vw;
+        }
+        .Box {
+          border-radius: 1vw;
+          width: 10vw;
+          height: 10vh;
+          border: 2px solid #6e6c6c;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-evenly;
+          align-items: center;
+        }
+        .Box h3 {
+          font-size: 1.5vw;
+        }
+        .Box button {
+          border: none;
+          padding: 1vh 1vw;
+          border-radius: 0.3vw;
+          cursor: pointer;
+          background-color: #b3e099;
+        }
+      </style>
+      <div class="BodyPop">
+        <div class="TotalQuestionBox">
+          <select name="" id="" class="TotalNumberOfQuestion">
+            <option value="">Q-50</option>
+            <option value="">Q-100</option>
+          </select>
+        </div>
+        <div class="Mocktest Box">
+          <h3 class="hadding">Mock Test</h3>
+          <button class="Btn">Start</button>
+        </div>
+        <div class="MCQTest Box">
+          <h3 class="Hadding">MCQ Test</h3>
+          <button class="Btn">Start</button>
+        </div>
+      </div>
+    </div>
+  </body>
+ 
+</html>

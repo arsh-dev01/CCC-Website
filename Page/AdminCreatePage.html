@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admint Create</title>
+    <link rel="stylesheet" href="../src/Style/LinkedFiles/CreateAdmin.css" />
+    <link rel="stylesheet" href="../src/Style/LinkedFiles/Header.css" />
+    <!-- FontAwosam -->
+    <link rel="stylesheet" href="../FontAwosome/css/all.min.css" />
+    <link rel="stylesheet" href="../FontAwosome/css/fontawesome.min.css" />
+  </head>
+  <body>
+   <header>
+     <div class="HeaderDublecatDiv">
+    <div class="HeaderContenar">
+      <div class="headerLogodiv">Code   - Stack</div>
+      <nav class="Nav">
+        <a href="AfterStudentLogin.html" class="navBtn OLavel">Home</a>
+        <a href="#" class="navBtn CCC" >Report</a>
+        <a href="#" class="navBtn About">About</a>
+        <a href="StudentLoginspage.html" class="navBtn Admin">Logout</a>
+      
+      </nav>
+    </div>
+  </div>
+  <script>
+  </script>
+</header>
+    <main>
+      <div class="AdminCreateBox">
+        <div class="AdminCreateElementContaner">
+          <h2 class="AdminCreateHadding">Create Admin</h2>
+          <label for="" class="AdminInstitutNameLabel">
+            Insitution / Coching Name
+            <input
+              type="text"
+              class="InsitutionName"
+              placeholder="Enter Institution Name"
+              onfocus="Instituiton()"
+            />
+            <!-- <span class="PlaceHolder">Enter Institution Name</span> -->
+          </label>
+          <label for="" class="AdminCreateUserNameLabel">
+            UserName
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input
+              type="text"
+              class="AdminUserNameCreate"
+              placeholder="Enter UserName"
+            />
+          </label>
+          <label for="" class="AdminCreatePasswordlabel">
+            Password
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+            <input
+              type="password"
+              name=""
+              id="Password"
+              placeholder="Enter Password"
+              class="AdminPasswordCreate PasswordInput"
+            />
+            <i
+              class="fa fa-eye-slash Password"
+              aria-hidden="true"
+              style="
+                position: absolute;
+                right: 1.4vw;
+                cursor: pointer;
+                color: black;
+              "
+            ></i>
+          </label>
+          <label for="" class="AdminConformPasswordlabel">
+            Conform Password &nbsp;&nbsp;
+            <input
+              type="password"
+              name=""
+              id="ConformPassword"
+              placeholder="Enter Conform Password"
+              class="AdminPasswordConform PasswordInput2"
+            />
+            <i
+              class="fa fa-eye-slash Password2"
+              aria-hidden="true"
+              style="
+                position: absolute;
+                right: 1.4vw;
+                cursor: pointer;
+                color: black;
+              "
+            ></i>
+          </label>
+          <i></i>
+          <button class="AdminCreateSubmitButton">Submit</button>
+        </div>
+      </div>
+    </main>
+  </body>
+  <script>
+    let PasswordIcons = document.querySelector(".Password");
+    PasswordIcons.addEventListener("click", (e) => {
+      let PasswordInput = document.querySelector(".PasswordInput");
+      if (PasswordInput.type == "password") {
+        PasswordInput.type = "text";
+      } else {
+        PasswordInput.type = "password";
+      }
+      PasswordIcons.classList.toggle("fa-eye-slash");
+      PasswordIcons.classList.toggle("fa-eye");
+    });
+    let PasswordIcons2 = document.querySelector(".Password2");
+    PasswordIcons2.addEventListener("click", (e) => {
+      let PasswordInput2 = document.querySelector(".PasswordInput2");
+      if (PasswordInput2.type == "password") {
+        PasswordInput2.type = "text";
+      } else {
+        PasswordInput2.type = "password";
+      }
+      PasswordIcons2.classList.toggle("fa-eye-slash");
+      PasswordIcons2.classList.toggle("fa-eye");
+    });
+  </script>
+  <script src="../src/js/ImpotedFiles/CreateAdmin.js"></script>
+  <script type="module" src="../src/js/ImpotedFiles/WebsiteJavaScript.js"></script>
+</html>

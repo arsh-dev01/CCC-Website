@@ -1,0 +1,93 @@
+/* /* @import url(../LinkedFiles/Color.css); */
+body {
+  background: var(--Whitest);
+  width: 100vw;
+  height: 100vh;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 85vh;
+  padding: 2vw;
+}
+main .ResultMainBox {
+  width: 90vw;
+  height: 100%;
+  background-color: #c9c9c9a9;
+  border-radius: 0.5vw;
+  border: 0.2vw solid black;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 6vh repeat(12,3.6vw);
+  overflow: hidden;
+  position: relative;
+}
+main .ResultMainBox .DataHadding,
+.DataRow {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 5vw 11.5vw 7vw 12vw 13.5vw 13vw 14vw 9vw;
+  grid-template-rows: auto;
+  border-bottom: 0.2vw solid;
+  z-index: 100;
+  gap: 0.5vw;
+  z-index: 1;
+}
+.DataHadding h5,
+.DataRow h5 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Date {
+  width: 11vw;
+  height: 4vw;
+  opacity: 0;
+  position: absolute;
+}
+.Date::-webkit-calendar-picker-indicator {
+  color: rgba(0, 0, 0, 0);
+  width: 300px;
+  height: 4vw;
+}
+.DataRow {
+  height: 3vw;
+  place-content: center;
+}
+.DataRow h5:last-child {
+  border: none;
+}
+.Border {
+  background-color: var(--Balackes);
+  border: none;
+  width: 0.3vw;
+  height: 91.2%;
+  z-index: -1;
+  position: relative;
+  top: 1.75vw;
+  left: -87%;
+  /* top: 0; */
+  /* left: -87%; */
+  /* height: 100%; */
+}
+.Position2 {
+  left: -77%;
+}
+.Position3 {
+  left: -68%;
+}
+.Position4 {
+  left: -56%;
+}
+.Position5 {
+  left: -42%;
+}
+.Position6 {
+  left: -28%;
+}
+.Position7 {
+  left: -14%;
+}

@@ -1,0 +1,6 @@
+@import url(src/Style/LinkedFiles/Color.css);
+* {
+  font-family: ArshnoorBold;
+  margin: 0;
+  padding: 0;
+}

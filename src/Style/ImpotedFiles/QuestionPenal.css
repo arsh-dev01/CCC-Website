@@ -1,0 +1,194 @@
+@import url(../LinkedFiles/Color.css);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: ArshnoorBold;
+}
+main {
+  width: 100vw;
+  height: 86vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .MCQ-Contener .MCQ-body {
+  width: 60vw;
+  min-height: 80vh;
+  backdrop-filter: blur(3px);
+  background-color: var(--Grayes);
+  border-radius: 2vw;
+  padding: 3vw;
+  position: relative;
+  top: 2vh;
+  color: var(--Whitest);
+}
+
+main .MCQ-Contener .MCQ-body .QuestionNumber {
+  background-color: var(--SkyBlues);
+  display: inline-block;
+  padding: 0.5vw;
+  outline: 2px solid rgba(0, 0, 0, 0.562);
+  border-radius: 1vw;
+  position: relative;
+  top: -1vw;
+  left: -1vw;
+  color: var(--Grayes);
+}
+main .MCQ-Contener .MCQ-body .QuestionTimer {
+  width: 3vw;
+  height: 3vw;
+  border-radius: 50%;
+  background-color: #008800;
+  position: absolute;
+  top: 1vw;
+  right: 0.5vw;
+}
+main .MCQ-Contener .MCQ-body .Question {
+  margin-bottom: 1vw;
+}
+main .MCQ-Contener .MCQ-body .Question {
+  display: grid;
+  gap: 1.5vw;
+}
+main .MCQ-Contener .MCQ-body ol,
+main .MCQ-Contener .MCQ-body ul {
+  list-style-type: none;
+}
+main .MCQ-Contener .MCQ-body ol {
+  position: relative;
+  top: 1vw;
+  left: 0;
+  display: grid;
+  gap: 2vw;
+}
+main .MCQ-Contener .MCQ-body ol li {
+  cursor: pointer;
+}
+main .MCQ-Contener .MCQ-body ol ul li {
+  display: inline-block;
+  font-size: 1.5vw;
+}
+main .MCQ-Contener .MCQ-body ol .Option {
+  list-style-type: upper-alpha;
+  /* border-radius: 3vw; */
+  background-color: var(--Whitest);
+  counter-increment: step-counter;
+  padding: 1vw 2vw;
+  color: var(--Balackes);
+  padding-left: 5vw;
+  transition: 0.2s;
+  transform: scale(0.99);
+  position: relative;
+  overflow: hidden;
+}
+li.Option::before {
+  content: counter(step-counter);
+  color: var(--Grayes);
+  position: absolute;
+  left: 0vw;
+  top: 0;
+  font-size: 100%;
+  font-weight: bold;
+  width: 4vw;
+  height: 100%;
+  /* padding: 3vw 1.5vw; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--SkyBlues);
+}
+.OptionActive {
+  transform: scale(1);
+  /* outline: 3px solid var(--Active); */
+  background-color: var(--Active)  !important;
+}
+main .MCQ-Contener .MCQ-body ol .Option:hover {
+  outline: 1px solid var(--SkyBlues);
+  transform: scale(1);
+}
+main .MCQ-Contener .MCQ-body ol .Option:active {
+  transform: scale(0.98);
+}
+main .MCQ-Contener .MCQ-body ol .Option label {
+  cursor: pointer;
+}
+main .MCQ-Contener .AnswerRelatedButton {
+  position: relative;
+  top: -3.5vw;
+}
+main .MCQ-Contener .AnswerRelatedButton button {
+  border: none;
+  padding: 1vw;
+  background-color: var(--SkyBlues);
+  /* color: var(--SkyBlues); */
+  border: 2px solid var(--Balackes);
+  outline: 2px solid var(--SkyBlues);
+  border-radius: 2vw;
+  cursor: pointer;
+  position: relative;
+  top: .2vw;
+  transition: 0.2s; 
+  font-size: 1.4vw;
+}
+/* main .MCQ-Contener .AnswerRelatedButton button:hover {
+} */
+
+.Leftbtn,.Rightbtn{
+  transition: all .3s;
+
+}
+.QuestionPreview:active .Leftbtn{
+   position: relative;
+  right: 1vw;
+  /* animation: LeftBtn .6s linear; */
+}
+.NextQuestion:active .Rightbtn{
+  position: relative;
+ left : 1vw;
+
+}
+/* @keyframes LeftBtn {
+  0%{
+    right: 0;
+  }
+  20%{
+    right: 3vw;
+  }
+  40%{
+    display: none;
+    right: -10vw;
+  }
+  100%{
+    display: inline;
+    right: 0;
+  }
+} */
+main .MCQ-Contener .AnswerRelatedButton button:active {
+  transform: scale(0.98);
+}
+main .MCQ-Contener .AnswerRelatedButton button:first-child {
+  left: 2vw;
+}
+
+main .MCQ-Contener .AnswerRelatedButton button:last-child {
+  right: 2vw;
+  float: right;
+}
+.ButtonIcons {
+  width: 2vw;
+}
+.RightAnswer {
+  /* outline: 2px solid green; */
+  background-color: var(--Right) !important;
+  color: #697060;
+}
+.WorngAnswer {
+  /* outline: 2px solid #f83932; */
+  background-color: var(--Worng) !important ;
+  color: var(--Balackes) !important;
+}
+.PointerEventNone {
+  pointer-events: none;
+}

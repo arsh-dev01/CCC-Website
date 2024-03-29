@@ -1,0 +1,93 @@
+@import url(../LinkedFiles/Color.css);
+*{
+  font-family: ArshnoorBold !important;
+}
+body{
+  background-color: var(--Whitest);
+}
+main {
+  width: 100vw;
+  height: 50vw;
+  margin-top: 1vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .LoginBoxForAdmin {
+  width: 32vw;
+  height: 35vw;
+  border-radius: 2vw;
+  color: var(--Whitest);
+  display: grid;
+  background: var(--Grayes);
+  backdrop-filter: blur(4px);
+  padding: 2vw;
+}
+main .LoginBoxForAdmin .AdminLoginHadding {
+  text-align: center;
+  position: relative;
+  top: 2vw;
+  font-size: 2.5vw;
+}
+main .LoginBoxForAdmin label {
+  margin-top: 1vw;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  position: relative;
+}
+main .LoginBoxForAdmin input[type="Text"],
+input[type="password"] {
+  width: 18vw;
+}
+main .LoginBoxForAdmin input {
+  transition: 0.2s;
+  border-radius: 0.5vw;
+  border: none;
+  height: 3vw;
+  padding: 0.5vw;
+  font-size: 1.5vw;
+  font-weight: 500;
+}
+main .LoginBoxForAdmin input:focus {
+  outline: 3px solid rgb(138, 252, 246);
+}
+main .LoginBoxForAdmin .AdminLoginButtonDiv {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 1vw;
+}
+main .LoginBoxForAdmin button {
+  width: 8vw;
+  height: 3.5vw;
+  border-radius: 0.8vw;
+  border: 2px solid var(--Balackes);
+  background-color: var(--SkyBlues);
+  color: var(--Balackes);
+  font-size: 1.5vw;
+  cursor: pointer;
+}
+main .LoginBoxForAdmin button:active {
+  background-color: #8be3fd;
+  transform: scale(0.95);
+}
+main .LoginBoxForAdmin .AdminLoginOtherLink {
+  position: relative;
+  top: 2vw;
+}
+main .LoginBoxForAdmin .AdminLoginOtherLink a {
+  color: #fff38b;
+  text-decoration: none;
+  font-size: 1.3vw;
+}
+main .LoginBoxForAdmin .AdminLoginOtherLink a:last-child {
+  float: right;
+  color: #e8ff7f;
+}
+main .LoginBoxForAdmin a:active {
+  transform: scale(0.97);
+}
+.AdminLogingLabel {
+  position: relative;
+}

@@ -1,0 +1,87 @@
+@import url(../LinkedFiles/Color.css);
+/* :root {
+  --Whitest: #EEEEEE;
+  --SkyBlues: #76ABAE;
+  --Grayes:#31363F;
+  --Balackes:#222831;
+ } */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--Balackes);
+}
+body {
+  background: var(--Whitest);
+}
+.MainBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 80vh;
+}
+.ResultBody {
+  width: 40vw;
+  height: 40vh;
+  border-radius: 1vh;
+  /* outline: 2px solid gray; */
+  background-color: var(--Grayes);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 1vw;
+  align-items: center;
+}
+.ResultBody h2 {
+  text-align: center;
+  position: relative;
+  top: -1vh;
+  color: var(--Whitest);
+}
+.ProcessBar {
+  width: 100%;
+  height: 3vh;
+  background-color: var(--Whitest);
+  overflow: hidden;
+  position: relative;
+}
+.ProcessBar .Percente {
+  top:0 ;
+  color: var(--Whitest);
+}
+.ProcessBackgrond {
+  background-color: green;
+  width: 50%;
+  height: 100%;
+}
+.ResultBar {
+  width: 70%;
+  height: 4vw;
+  /* outline: 2px solid gray; */
+  /* border-radius: 2vh; */
+  overflow: hidden;
+  position: relative;
+  background-color: var(--Whitest);
+}
+
+.ResultBackground {
+  width: 20%;
+  height: 100%;
+  background-color: var(--ResultRight);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Percente {
+  position: absolute;
+  top: 0.9vw;
+  left: 40%;
+}
+.Atempt {
+  background-color: rgb(121, 141, 255);
+}
+.Worng {
+  background-color: rgb(252, 119, 119);
+}

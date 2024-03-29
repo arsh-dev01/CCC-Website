@@ -1,0 +1,122 @@
+{
+  "chapter1": {
+    "Q_1": {
+      "Question": {
+        "English": "What is restarting a previously started computer called?",
+        "Hindi": "पहले से शुरू कंप्यूटर को दोबारा से शुरू करना क्या कहलाता है? "
+      },
+      "Answer": ["Warm booting", "वार्म बूटिंग"],
+      "Option": {
+        "English": ["cold booting", "Login Off", "shut down"],
+        "Hindi": ["कोल्ड बूटिंग", "लॉगइन ऑफ", "शट डाउन"]
+      }
+    },
+    "Q_2": {
+      "Question": {
+        "English": "Which key is used to open Print Preview in LibreOffice ?",
+        "Hindi": "लिर􀄸 ऑलि􀄝 􀄑ं लरंट रीय􀄳 ख􀄼ि􀄋􀄸 क􀄸 लिए लक􀄝 क ं जी का उप􀄒􀄼ग लक􀄒ा जाता 􀄞􀄹 ? "
+      },
+      "Answer": ["Ctrl+Shift+O", "Ctrl+Shift+O"],
+      "Option": {
+        "English": ["Ctrl+Shift+S", "Ctrl+Shift+T", "Ctrl+Shift+X"],
+        "Hindi": ["Ctrl+Shift+S", "Ctrl+Shift+T", "Ctrl+Shift+X"]
+      }
+    },
+    "Q_3": {
+      "Question": {
+        "English": "A Web address is also called as :",
+        "Hindi": "􀄸􀄏 एडर􀄸􀄝 क􀄼 __________ क􀄸 ूप 􀄑ं 􀄐ी क􀄞ा जाता 􀄞"
+      },
+      "Answer": ["URL", "􀄒􀄳आरएि"],
+      "Option": {
+        "English": ["ULR", "UPR", "URI"],
+        "Hindi": ["􀄒􀄳एिआर", "􀄒􀄳पीआर", "􀄒􀄳आरआई"]
+      }
+    },
+    "Q_4": {
+      "Question": {
+        "English": "AEPS stands for :",
+        "Hindi": "पहले से शुरू कंप्यूटर को दोबारा से शुरू "
+      },
+      "Answer": ["Aadhaar Enabled Payment System", "आ􀄊ार इ􀄋􀄸􀄏ड प􀄸􀄑ंट ल􀄝ट􀄑"],
+      "Option": {
+        "English": [
+          "Aadhaar Enabled Payment Source",
+          "Aadhaar Enrolled Payment System",
+          "None of the above"
+        ],
+        "Hindi": [
+          "आ􀄊ार इ􀄋􀄸􀄏ड प􀄸􀄑ंट 􀄝􀄼",
+          "आ􀄊ार ए􀄋र􀄼ड प􀄸􀄑ंट ल􀄝ट􀄑",
+          "इ􀄋􀄑ं 􀄝􀄸 क􀄼ई 􀄋􀄞ी"
+        ]
+      }
+    },
+    "Q_5": {
+      "Question": {
+        "English": "What is restarting a previously started computer called?",
+        "Hindi": "लिर􀄸 ऑलि􀄝 राइटर 􀄑ं __________ िाइि एसटंश􀄋 का उप􀄒􀄼ग ट􀄸पि􀄸ट क􀄸 लिए लक􀄒ा जाता 􀄞􀄹।"
+      },
+      "Answer": [".doc", ".doc"],
+      "Option": {
+        "English": [".xlx", ".txt", ".ott"],
+        "Hindi": [".xlx", ".txt", ".ott"]
+      }
+    },
+    "Q_6": {
+      "Question": {
+        "English": "Which size of data is called as Big Data ?",
+        "Hindi": "लक􀄝 आकार क􀄸 ड􀄸टा क􀄼 ल􀄏ग ड􀄸टा क􀄞ा जाता 􀄞􀄹? "
+      },
+      "Answer": ["Peta byte", "प􀄸टा 􀄏ाइट"],
+      "Option": {
+        "English": ["Giga byte", "Mega byte", "􀄑􀄸टा 􀄏ाइट"],
+        "Hindi": ["गीगा 􀄏ाइट", "􀄑􀄸गा 􀄏ाइट", "Meta byte"]
+      }
+    },
+    "Q_7": {
+      "Question": {
+        "English": "Choose the correct format for Gmail-email address :",
+        "Hindi": "जी􀄑􀄸ि-ई􀄑􀄸ि पत􀄸 क􀄸 लिए 􀄝􀄞ी राूप च 􀄋ं : "
+      },
+      "Answer": ["abc@gmail.com", "abc@gmail.com"],
+      "Option": {
+        "English": ["abc@gmail-com", "abcgmail@com", "None of the above"],
+        "Hindi": ["abc@gmail-com", "abcgmail@com", "इ􀄋􀄑ं 􀄝􀄸 क􀄼ई 􀄋􀄞ी ं"]
+      }
+    },
+    "Q_8": {
+      "Question": {
+        "English": "Which one is not the method of Digital Payment Transfer?",
+        "Hindi": "क􀄽􀄋 􀄝ी एक लडलजटि 􀄐 गता􀄋 अंतर् की ल ल􀄊 􀄋􀄞ी ं 􀄞􀄹 ? "
+      },
+      "Answer": ["IMPS", "IMPS"],
+      "Option": {
+        "English": ["RTGS", "NFET", "UPI"],
+        "Hindi": ["RTGS", "NFET", "UPI"]
+      }
+    },
+    "Q_9": {
+      "Question": {
+        "English": "Choose the correct name of Web browser :",
+        "Hindi": "􀄸􀄏 राउजर का 􀄝􀄞ी 􀄋ा􀄑 च 􀄋ं :"
+      },
+      "Answer": ["Google", "ग􀄳गि"],
+      "Option": {
+        "English": ["Yahoo", "Gmail", "Opera"],
+        "Hindi": ["􀄒ाू", "जी􀄑􀄸ि", "ओप􀄸रा"]
+      }
+    },
+    "Q_10": {
+      "Question": {
+        "English": "What is the minimum zoom in LibreOffice Calc ?",
+        "Hindi": "लिर􀄸 ऑलि􀄝 क􀄹 क 􀄑ं य􀄳􀄋त􀄑 ज􀄳􀄑 या 􀄞􀄹 ?"
+      },
+      "Answer": ["20%", "20%"],
+      "Option": {
+        "English": ["5%", "25%", "15%"],
+        "Hindi": ["5%", "25%", "15%"]
+      }
+    }
+  }
+}

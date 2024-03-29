@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Cache-control" content="no-cache" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CCC Webiste</title>
+  </head>
+  <body>
+    <link rel="stylesheet" href="Page/StudentLoginspage.html" />
+  </body>
+  <script>
+    let QuestionText = localStorage.getItem("Questiontext");
+    let Questions = localStorage.getItem("Questions");
+    let AdminInfo = localStorage.getItem("AdminInfo");
+    window.addEventListener("DOMContentLoaded", () => {
+      console.log("fdsfsffdsfLoded");
+      if (QuestionText == null || Questions == null || AdminInfo == null) {
+        console.log(QuestionText);
+        console.log(Questions);
+        console.log(AdminInfo);
+        window.open("Page/AdminCreatePage.html", "_self");
+      } else {
+        window.open("Page/StudentLoginspage.html", "_self");
+      }
+    });
+  </script>
+</html>

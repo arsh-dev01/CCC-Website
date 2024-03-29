@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      :root {
+        --Whitest: #eeeeee;
+        --SkyBlues: #76abae;
+        --Grayes: #31363f;
+        --Balackes: #222831;
+        --HeaderBG: #cec9c9;
+      }
+      * {
+        font-family: serif;
+      }
+      body {
+        background-color: var(--Whitest);
+      }
+      .ChaptersPopBG {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .ChaptersBox {
+        position: relative;
+        width: 50vw;
+        height: 40vh;
+        border-radius: 1vh;
+        background-color: var(--Grayes);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+      }
+      .ChaptersHadding {
+        color: var(--Whitest);
+        text-align: center;
+        pointer-events: none;
+      }
+      .ButtonBox {
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        grid-template-rows: repeat(3, auto);
+        gap: 3vw 5vw;
+        place-content: center;
+        place-items: center;
+      }
+      .ChapterButton {
+        border: none;
+        width: 8vw;
+        height: 5vh;
+        border-radius: 1vh;
+        cursor: pointer;
+        color: var(--SkyBlues);
+        outline: 2px solid var(--SkyBlues);
+        background-color: transparent;
+        transition: all 0.2s;
+      }
+      .ChapterButton:hover {
+        color: var(--Balackes);
+        background-color: var(--SkyBlues);
+      }
+      .ChapterButton:active {
+        transform: scale(0.98);
+      }
+      .TypeBox {
+        outline: 2px solid var(--SkyBlues);
+        width: 15vw;
+        border-radius: 1vw;
+        height: 5vh;
+        display: grid;
+        grid-template-columns: auto auto;
+        overflow: hidden;
+        position: relative;
+        bottom: 0.7vw;
+      }
+      .TypeBox div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        color: var(--Whitest);
+      }
+      .TypeBox div:not(.Mock):active {
+        transform: scale(0.98);
+      }
+      .Mock {
+        transition: all 0.2s;
+        background-color: var(--Whitest);
+        color: var(--Balackes) !important;
+      }
+      .TotalQuesiton{
+        position: absolute;
+        right: .4vw;
+        top: .5vw;
+        background-color: transparent;
+        color: var(--SkyBlues);
+        border: 2px solid var(--SkyBlues);
+        cursor: pointer;
+      }
+      /* .TotalQuesiton:hover{
+        background-color: var(--SkyBlues);
+        color: var(--Balackes);
+      } */
+    </style>
+  </head>
+  <body>
+    <div class="ChaptersPopBG">
+      <div class="ChaptersBox">
+        <select name="" id="" class="TotalQuesiton">
+          <option value="Q-50">Q-50</option>
+          <option value="Q-100">Q-100</option>
+        </select>
+        <div class="TypeBox">
+          <div class="Mock1 Mock">Mock</div>
+          <div class="MCQ1">MCQ</div>
+        </div>
+        <div class="ButtonBox">
+          <button class="ChapterButton">Chapter-1</button>
+          <button class="ChapterButton">Chapter-2</button>
+          <button class="ChapterButton">Chapter-3</button>
+          <button class="ChapterButton">Chapter-4</button>
+          <button class="ChapterButton">Chapter-5</button>
+          <button class="ChapterButton">Chapter-6</button>
+          <button class="ChapterButton">Chapter-7</button>
+          <button class="ChapterButton">Chapter-8</button>
+          <button class="ChapterButton">Chapter-9</button>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+    let Mock = document.querySelector(".Mock1");
+    let MCQ = document.querySelector(".MCQ1");
+    Mock.addEventListener("click", (e) => {
+      MCQ.classList.remove("Mock");
+      e.target.classList.add("Mock");
+    });
+    MCQ.addEventListener("click", (e) => {
+      Mock.classList.remove("Mock");
+      e.target.classList.add("Mock");
+    });
+  </script>
+</html>

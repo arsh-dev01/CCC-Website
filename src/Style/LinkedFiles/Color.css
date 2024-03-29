@@ -1,0 +1,19 @@
+:root {
+  --Whitest: #eeeeee;
+  --SkyBlues: #76abae;
+  --Grayes: #31363f;
+  --Balackes: #222831;
+  --HeaderBG: #cec9c9;
+  --Right: #b3fcb3;
+  --ResultRight:#23da42;
+  --Worng: #ef9797;
+  --Active: #bff1f3;
+}
+@font-face {
+  font-family: ArshnoorThin;
+  src: url(../../../FontAwosome/Font/Oxygen-Light.ttf);
+}
+@font-face {
+  font-family: ArshnoorBold;
+  src: url(../../../FontAwosome/Font/Oxygen-Regular.ttf);
+}

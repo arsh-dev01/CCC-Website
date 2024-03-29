@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Cache-control" content="no-cache" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AfterStudentLogin</title> 
+    <link rel="stylesheet" href="../src/Style/LinkedFiles/Header.css" />
+    <link rel="stylesheet" href="../src/Style/LinkedFiles/AfterStudent.css" />
+
+    <!-- FontAwosam -->
+    <link rel="stylesheet" href="../FontAwosome/css/all.min.css" />
+    <link rel="stylesheet" href="../FontAwosome/css/fontawesome.min.css" />
+  </head>
+  <body>
+    <header>
+      <div class="HeaderDublecatDiv">
+        <div class="HeaderContenar">
+          <div class="headerLogodiv">Code - Stack</div>
+          <nav class="Nav">
+            <button class="navBtn OLavel" onclick="window.open('AfterStudentLogin.html','_self')">Home</button>
+            <button class="navBtn Report" onclick="window.open('Report.html','_self')">Report</button>
+            <button class="navBtn About" onclick="window.open('AfterStudentLogin.html','_self')">About</button>
+            <button class="navBtn Admin" onclick="window.open('StudentLoginspage.html','_self')">Logout</button>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="AfterStudentLoginContener">
+        <div class="ChapterWiseQuestion PreviweForQuestion">
+          <img
+            src="../src/Images/Icons/ChapterWise.png"
+            alt=""
+            class="ChapteerWiseQuestionImage"
+          />
+          <h3 class="ChapterWisehadding">Chapter Wise Question</h3>
+          <!-- <div class="ChaptersViewBox">
+            <h5 class="ChapterNameAndNumber" id="1">Ch-1</h5>
+            <h5 class="ChapterNameAndNumber" id="2">Ch-2</h5>
+            <h5 class="ChapterNameAndNumber" id="3">Ch-3</h5>
+            <h5 class="ChapterNameAndNumber" id="4">Ch-4</h5>
+            <h5 class="ChapterNameAndNumber" id="5">Ch-5</h5>
+            <h5 class="ChapterNameAndNumber" id="6">Ch-6</h5>
+            <h5 class="ChapterNameAndNumber" id="7">Ch-7</h5>
+            <h5 class="ChapterNameAndNumber" id="8">Ch-8</h5>
+            <h5 class="ChapterNameAndNumber" id="9">Ch-9</h5>
+          </div> -->
+        </div>
+        <div
+          id="FullBookDiv"
+          class="CCC-CompleteBookQuestion PreviweForQuestion"
+        >
+          <img
+            src="../src/Images/Icons/FullBook.png"
+            alt=""
+            class="CCC-CompleteBookQuestionImage"
+          />
+          <h3 class="ComleteBookQuestionHadding">Full Book Question</h3>
+        </div>
+      </div>
+    </main>
+    <!-- <div class="PopBack"> -->
+    <div class="PopBack MockPopUp" style="display: none">
+      <i class="fa-solid fa-xmark"></i>
+      <div class="BodyPop">
+        <div class="TotalQuestionBox">
+          <select name="" id="" class="FullBookQuestions">
+            <option value="50">Q-50</option>
+            <option value="100">Q-100</option>
+          </select>
+        </div>
+        <div class="Mocktest Box">
+          <h3 class="hadding">Mock Test</h3>
+          <button class="Btn FullBookMockbtn">Start</button>
+        </div>
+        <div class="MCQTest Box">
+          <h3 class="Hadding">MCQ Test</h3>
+          <button class="Btn FullBookMCQbtn">Start</button>
+        </div>
+      </div>
+    </div>
+    <div class="ChaptersPopBG" style="display: none">
+      <!-- <i class="fa-solid fa-xmark"></i> -->
+      <div class="ChaptersBox">
+        <select name="" class="ChapterQuestions TotalQuesiton">
+          <option value="50">Q-50</option>
+          <option value="100">Q-100</option>
+        </select>
+        <div class="TypeBox">
+          <div class="ChapterMock Active">Mock</div>
+          <div class="ChapterMCQ">MCQ</div>
+        </div>
+        <div class="ButtonBox">
+          <button class="ChapterButton" id="1">Chapter-1</button>
+          <button class="ChapterButton" id="2">Chapter-2</button>
+          <button class="ChapterButton" id="3">Chapter-3</button>
+          <button class="ChapterButton" id="4">Chapter-4</button>
+          <button class="ChapterButton" id="5">Chapter-5</button>
+          <button class="ChapterButton" id="6">Chapter-6</button>
+          <button class="ChapterButton" id="7">Chapter-7</button>
+          <button class="ChapterButton" id="8">Chapter-8</button>
+          <button class="ChapterButton" id="9">Chapter-9</button>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script
+    type="module"
+    src="../src/js/ImpotedFiles/WebsiteJavaScript.js"
+  ></script>
+  <script
+    type="module"
+    src="../src/js/ImpotedFiles/StudentLoginAfter.js"
+  ></script>
+  <script src="../src/js/ImpotedFiles/Report.js"></script>
+</html>

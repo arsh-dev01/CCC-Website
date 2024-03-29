@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add Questions</title>
+    <link rel="stylesheet" href="../src/Style/LinkedFiles/Header.css" />
+    <link rel="stylesheet" href="../src/Style/LinkedFiles/AddQuestions.css" />
+  </head>
+  <body>
+    <header>
+      <div class="HeaderDublecatDiv">
+        <div class="HeaderContenar">
+          <div class="headerLogodiv">Code - Stack</div>
+          <nav class="Nav">
+            <button
+              class="navBtn OLavel"
+              onclick="window.open('AfterStudentLogin.html','_self')"
+            >
+              Home
+            </button>
+            <button
+              class="navBtn Report"
+              onclick="window.open('Report.html','_self')"
+            >
+              Report
+            </button>
+            <button
+              class="navBtn About"
+              onclick="window.open('AfterStudentLogin.html','_self')"
+            >
+              About
+            </button>
+            <button
+              class="navBtn Admin"
+              onclick="window.open('StudentLoginspage.html','_self')"
+            >
+              Logout
+            </button>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="AddQuestionbox">
+        <fieldset>
+          <legend align="center">
+            <h4 class="AddQuestionHadding">Add Question</h4>
+          </legend>
+
+          <select name="Chapters" id="Chapters">
+            <option value="chapter1" class="Chapter1">Chapter-1</option>
+            <option value="chapter2" class="Chapter2">Chapter-2</option>
+            <option value="chapter3" class="Chapter3">Chapter-3</option>
+            <option value="chapter4" class="Chapter4">Chapter-4</option>
+            <option value="chapter5" class="Chapter5">Chapter-5</option>
+            <option value="chapter6" class="Chapter6">Chapter-6</option>
+            <option value="chapter7" class="Chapter7">Chapter-7</option>
+            <option value="chapter8" class="Chapter8">Chapter-8</option>
+            <option value="chapter9" class="Chapter9">Chapter-9</option>
+          </select>
+          <br />
+          <label for="">
+            Enter Questions
+            <br />
+            <input
+              type="text"
+              class="QuestionEnglish"
+              placeholder="Enter Question in English"
+            />
+            <input
+              type="text"
+              class="QuestionHindi"
+              placeholder="Enter Question in Hindi"
+            />
+          </label>
+          <br />
+          <label for="">
+            Enter Answer
+            <br />
+            <input
+              type="text"
+              class="AnswerInEnglish"
+              placeholder="Enter Answer In Englsih"
+            />
+            <input
+              type="text"
+              class="AnswerInHindi"
+              placeholder="Enter Answer In Hindi"
+            />
+          </label>
+          <br />
+          <label for="">
+            Options
+            <br />
+            <ol>
+              <li>
+                Option-1
+                <ul>
+                  <li>
+                    Englsih
+                    <input
+                      type="text"
+                      class="OptionOneEnglish OptionInEnglish"
+                      placeholder="Enter Option-1 in English"
+                    />
+                  </li>
+                  <li>
+                    Hindi
+                    <input
+                      type="text"
+                      class="OptionOneHindi OptionInHindi"
+                      placeholder="Enter Option-1 in Hindi"
+                    />
+                  </li>
+                </ul>
+              </li>
+              <li>
+                Option-2
+                <ul>
+                  <li>
+                    Englsih
+                    <input
+                      type="text"
+                      class="OptionTwoEnglish OptionInEnglish"
+                      placeholder="Enter Option-2 in English"
+                    />
+                  </li>
+                  <li>
+                    Hindi
+                    <input
+                      type="text"
+                      class="OptionTwoHindi OptionInHindi"
+                      placeholder="Enter Option-2 in Hindi"
+                    />
+                  </li>
+                </ul>
+              </li>
+              <li>
+                Option-3
+                <ul>
+                  <li>
+                    Englsih
+                    <input
+                      type="text"
+                      class="OptionThreeEnglish OptionInEnglish"
+                      placeholder="Enter Option-3 in English"
+                    />
+                  </li>
+                  <li>
+                    Hindi
+                    <input
+                      type="text"
+                      class="OptionThreeHindi OptionInHindi"
+                      placeholder="Enter Option-3 in Hindi"
+                    />
+                  </li>
+                </ul>
+              </li>
+            </ol>
+          </label>
+          <button class="AddQuestionsSubmit">Submit</button>
+        </fieldset>
+      </div>
+    </main>
+  </body>
+  <!-- <script src="../QuestionAndAdminInfo.js"></script> -->
+  <!-- <script
+    type="module"
+    src="../src/js/ImpotedFiles/WebsiteJavaScript.js"
+  ></script> -->
+  <script type="module" src="../src/js/ImpotedFiles/AddQuestions.js"></script>
+  <!-- <script type="module" src="../src/js/ImpotedFiles/CheckQuestionDual.js"></script> -->
+  <script src="../src/js/ImpotedFiles/QuestionAndAdminInfo.js"></script>
+</html>

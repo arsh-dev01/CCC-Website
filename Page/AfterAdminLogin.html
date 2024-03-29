@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Cache-control" content="no-cache" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Logined</title>
+    <link
+      rel="stylesheet"
+      href="../src/Style/LinkedFiles/AfterAdminLogin.css"
+    />
+    <link rel="stylesheet" href="../src/Style/LinkedFiles/Header.css" />
+  </head>
+  <body>
+    <header>
+      <div class="HeaderDublecatDiv">
+        <div class="HeaderContenar">
+          <div class="headerLogodiv">Code - Stack</div>
+          <nav class="Nav">
+            <button
+              class="navBtn OLavel"
+              onclick="window.open('AfterStudentLogin.html','_self')"
+            >
+              Home
+            </button>
+            <button
+              class="navBtn Report"
+              onclick="window.open('Report.html','_self')"
+            >
+              Report
+            </button>
+            <button
+              class="navBtn About"
+              onclick="window.open('AfterStudentLogin.html','_self')"
+            >
+              About
+            </button>
+            <button
+              class="navBtn Admin"
+              onclick="window.open('StudentLoginspage.html','_self')"
+            >
+              Logout
+            </button>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="AdminToolsBox">
+        <div class="Tool EditAdminInfo">
+          <div class="ToolImages">
+            <img src="../src/Images/Icons/User.png" alt="" class="ToolImage" />
+          </div>
+          <h3 class="ToolHadding">Edit Admin Info</h3>
+        </div>
+        <div class="Tool StudentEdit">
+          <div class="ToolImages">
+            <img
+              src="../src/Images/Icons/Student.png"
+              alt=""
+              class="ToolImage"
+            />
+          </div>
+          <h3 class="ToolHadding">Edit Student Info</h3>
+        </div>
+        <div class="Tool AddQuestion">
+          <div class="ToolImages">
+            <img src="../src/Images/Icons/plus.png" alt="" class="AddQuestionImage" />
+          </div>
+          <h3 class="ToolHadding">Add Question</h3>
+        </div>
+        <div class="Tool Result">
+          <div class="ToolImages">
+            <img
+              src="../src/Images/Icons/Result.png"
+              alt=""
+              class="ToolImage"
+            />
+          </div>
+          <h3 class="ToolHadding">Results</h3>
+        </div>
+      </div>
+    </main>
+  </body>
+  <script
+    type="module"
+    src="../src/js/ImpotedFiles/AfterAdminLogin.js"
+  ></script>
+</html>

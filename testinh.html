@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="admin.css" />
+    <link rel="stylesheet" href="src/Style/ImpotedFiles/Header.css" />
+    <style>
+      main {
+        width: 100vw;
+        height: 85vh;
+        display: grid;
+        place-content: center;
+        background-color: var(--Whitest);
+      }
+      .AdminloginContainer {
+        display: grid;
+        grid-template-columns: auto;
+        place-content: center;
+        gap: 2vw;
+        outline: 3px solid var(--Grayes);
+        border-radius: 3vw;
+        width: 30vw;
+        height: 40vh;
+        background-color: white;
+        position: relative;
+      }
+      .AdminHadding {
+        display: inline;
+        text-align: center;
+        position: relative;
+        bottom: .4vw;
+        margin: auto;
+        width: 10vw;
+        background-color: white;
+        position: relative;
+        z-index: 2;
+        pointer-events: none;
+      }
+      hr {
+        position: relative;
+        bottom: 3.3vw;
+      }
+      label {
+        position: relative;
+        width: 100%;
+      }
+      label input,
+      .AdminLoginBtn {
+        min-height: 4vh;
+        border-radius: 0.5vw;
+      }
+      label span {
+        position: absolute;
+        top: -1.8vw;
+        left: 0;
+        font-size: 1.1vw;
+        font-weight: 600;
+      }
+      label input {
+        width: 23vw;
+        border: 1px solid var(--Grayes);
+        background-color: #ecebebe3;
+        padding: 0.5vw;
+      }
+      input::placeholder {
+        font-size: 1.1vw;
+        padding-left: 1.5vw;
+        display: grid;
+        place-content: center;
+      }
+      .UserNameLabel {
+        margin-bottom: 1vw;
+      }
+      .AdminLoginBtn {
+        position: relative;
+        top: -0.8em;
+        padding: 0.5vw 0;
+        display: grid;
+        place-content: center;
+        background-color: var(--SkyBlues);
+        border: 2px solid var(--SkyBlues);
+        color: var(--Whitest);
+        transition: all 0.3s ease;
+      }
+      .AdminLoginBtn:hover {
+        /* outline: 2px solid var(--SkyBlues); */
+        background-color: white;
+        color: var(--Balakes);
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <div class="AdminloginContainer">
+        <h4 class="AdminHadding">Admin Login</h4>
+        <hr />
+        <label for="" class="UserNameLabel">
+          <span class="UserText">Username</span>
+          <input
+            type="text"
+            class="AdminUserName"
+            placeholder="Enter your username"
+          />
+        </label>
+        <label for="" class="PasswordLabel">
+          <span class="PasswordText">Password</span>
+          <input
+            type="text"
+            class="AdminPasword"
+            placeholder="Enter your password"
+          />
+        </label>
+        <button class="AdminLoginBtn">Login</button>
+      </div>
+    </main>
+  </body>
+  <script type="module" src="src/js/ImpotedFiles/WebsiteJavaScript.js"></script>
+</html>

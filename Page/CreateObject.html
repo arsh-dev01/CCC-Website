@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QuestionObject</title>
+  </head>
+  <body>
+    <input type="text" class="text" id="myText" />
+    <button class="btn" onclick="copyContent()">Copy!</button>
+
+    <script>
+      let text = document.getElementById("myText");
+      const copyContent = async () => {
+        try {
+          await navigator.clipboard.writeText(text.value);
+          console.log("Content copied to clipboard");
+        } catch (err) {
+          console.error("Failed to copy: ", err);
+        }
+      };
+    </script>
+    <script type="module" src="../src/js/ImpotedFiles/CreateObject.js"></script>
+  </body>
+</html>

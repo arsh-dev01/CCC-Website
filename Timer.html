@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .timer{
+      width: 6vw;
+      height: 6vw;
+      border-radius: 50%;
+      background-color: green;
+      color: white;
+      display:flex;
+      align-items: center;
+      justify-content: space-evenly;
+    }
+  </style>
+</head>
+<body>
+  <div class="timer">
+    <span class="Minute">00</span>
+    <span class="Second">00</span>
+  </div>
+</body>
+<script>
+let Minute=document.querySelector(".Minute");
+let Second=document.querySelector(".Second");
+let Sec=60;
+let Min=90;
+console.log(Minute,Second)
+setInterval(()=>{
+  if(Sec==0){
+    Sec=60;
+    Min--;
+  }
+  Sec--;
+  if(Sec<10){
+    console.log("0"+Sec);
+    Second.innerText="0"+Sec;
+  }else{
+    console.log(Sec);
+    Second.innerText=Sec;
+  }
+  if(Min<10){
+    Minute.innerText="0"+Min;
+  }else{
+    Minute.innerText=Min;
+  }
+},1000)
+</script>
+</html>

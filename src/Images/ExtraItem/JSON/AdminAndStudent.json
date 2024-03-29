@@ -1,0 +1,21 @@
+{
+  "Admin": {
+    "Institution": "Hope Group of Institutions",
+    "AdminUserName": "root",
+    "AdminPassword": "Human Devil"
+  },
+  "Student": {
+    "Student1": "1",
+    "Student2": "2",
+    "Student3": "3",
+    "Student4": "4",
+    "Student5": "5",
+    "Student6": "6",
+    "Student7": "7",
+    "Student8": "8",
+    "Student9": "9",
+    "Student10": "10",
+    "Student11": "11",
+    "Student12": "12"
+  }
+}

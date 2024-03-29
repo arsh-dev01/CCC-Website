@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Cache-control" content="no-cache" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MCQ Home Page</title>
+    <link rel="stylesheet" href="../src/Style/LinkedFiles/QuestionPenal.css" />
+    <link rel="stylesheet" href="../src/Style/LinkedFiles/Header.css" />
+    <!-- Font Awosame -->
+    <link rel="stylesheet" href="../FontAwosome/css/all.min.css" />
+    <link rel="stylesheet" href="../FontAwosome/css/fontawesome.min.css" />
+  </head>
+  <body>
+   
+    <header>
+      <div class="HeaderDublecatDiv">
+        <div class="HeaderContenar">
+          <div class="headerLogodiv">Code - Stack</div>
+          <nav class="Nav">
+            <button class="navBtn OLavel" onclick="window.open('AfterStudentLogin.html','_self')">Home</button>
+            <button class="navBtn Report" onclick="window.open('Report.html','_self')">Report</button>
+            <button class="navBtn About" onclick="window.open('AfterStudentLogin.html','_self')">About</button>
+            <button class="navBtn Admin" onclick="window.open('StudentLoginspage.html','_self')">Logout</button>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="MCQ-Contener">
+        <div class="MCQ-body">
+          <p class="QuestionNumber">
+            Q.N.
+            <span>01</span>
+          </p>
+          <div class="QuestionTimer"></div>
+          <div class="Question">
+            <p class="QuestionInEnglish">
+              <span class="QuestionSpan">
+                What are the different features of Big Data Analytics?</span
+              >
+            </p>
+            <p class="QuestionInHindi">
+              <span> िबग डाटा एनािलिट की िविभ िवशेषताए ा है ? </span>
+            </p>
+          </div>
+          <ol>
+            <li class="Option1 Option">
+              <label for="">
+                <ul>
+                  <li class="OptionInEnglish"></li>
+                  <li class="OptionInHindi">
+                    ( <span class="OptionInHindi">िकपैड लॉक करनेके िलए</span> )
+                  </li>
+                </ul>
+              </label>
+            </li>
+            <li class="Option2 Option">
+              <label for="">
+                <ul>
+                  <li class="OptionInEnglish"></li>
+                  <li class="OptionInHindi">
+                    (
+                    <span class="OptionInHindi"
+                      >िवंडोज हे को िड लेकरनेके िलए</span
+                    >
+                    )
+                  </li>
+                </ul>
+              </label>
+            </li>
+            <li class="Option3 Option">
+              <label for="">
+                <ul>
+                  <li class="OptionInEnglish"></li>
+                  <li class="OptionInHindi">
+                    (
+                    <span class="OptionInHindi"
+                      >यूिटिलटी मैनेजर ओपन करनेके िलए</span
+                    >
+                    )
+                  </li>
+                </ul>
+              </label>
+            </li>
+            <li class="Option4 Option">
+              <label for="">
+                <ul>
+                  <li class="OptionInEnglish"></li>
+                  <li class="OptionInHindi">
+                    (
+                    <span class="OptionInHindi">रन डायलॉग ओपन करनेके िलए</span>
+                    )
+                  </li>
+                </ul>
+              </label>
+            </li>
+          </ol>
+        </div>
+        <div class="AnswerRelatedButton">
+          <button class="QuestionPreview">
+            <i class="fa-solid fa-arrow-left Leftbtn"></i>
+            Previous
+          </button>
+          <button class="NextQuestion" id="Next">
+            Next
+            <i class="fa-solid fa-arrow-right Rightbtn"></i>
+          </button>
+        </div>
+      </div>
+    </main>
+  </body>
+  <script type="module" src="../src/js/ImpotedFiles/QuestionPenal.js"></script>
+  <script src="../src/js/ImpotedFiles/QuestionAndAdminInfo.js"></script>
+  <script
+  type="module"
+  src="../src/js/ImpotedFiles/FilterQuestionObject.js"
+  ></script>
+  <script type="module" src="../src/js/ImpotedFiles/CheckAnswer.js"></script>
+  <script
+    type="module"
+    src="../src/js/ImpotedFiles/WebsiteJavaScript.js"
+  ></script>
+</html>

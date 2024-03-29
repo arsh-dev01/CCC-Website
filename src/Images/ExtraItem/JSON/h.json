@@ -1,0 +1,315 @@
+{
+  "chapter1": {
+    "Q_1": {
+      "Question": {
+        "English": "Scanner is which type of device?",
+        "Hindi": "स्कैनर किस प्रकार का उपकरण है?"
+      },
+      "Answer": { "English": "Input", "Hindi": " इनपुट" },
+      "Options": {
+        "English": [" Output ", "Input and output both", " None of these"],
+        "Hindi": [" आउटपुट", " इनपुट और आउटपुट दोनों", "इनमें से कोई नहीं"]
+      }
+    },
+    "Q_2": {
+      "Question": {
+        "English": " What is the full form of LCD?",
+        "Hindi": "एलसीडी का पूर्ण रूप क्या है?"
+      },
+      "Answer": {
+        "English": "Liquid crystal display",
+        "Hindi": "लिक्विड क्रिस्टल डिस्प्ले"
+      },
+      "Options": {
+        "English": [
+          " Light controlling display",
+          "Liquid controlling diode",
+          " None of these"
+        ],
+        "Hindi": [
+          "प्रकाश नियंत्रण प्रदर्शन",
+          "तरल नियंत्रण डायोड",
+          "इनमें से कोई नहीं"
+        ]
+      }
+    },
+    "Q_3": {
+      "Question": {
+        "English": "Which of the following is primary memory?",
+        "Hindi": "निम्नलिखित में से कौन सी प्राथमिक मेमोरी है?"
+      },
+      "Answer": { "English": "RAM", "Hindi": "RAM" },
+      "Options": {
+        "English": ["Floppy Disk", " Hard disk", " Optical disk"],
+        "Hindi": ["Floppy Disk", " Hard disk", " Optical disk"]
+      }
+    },
+    "Q_4": {
+      "Question": {
+        "English": "What is the full form of DVD?",
+        "Hindi": "डीवीडी का पूर्ण रूप क्या है?"
+      },
+      "Answer": {
+        "English": "Digital versatile disk",
+        "Hindi": "डीजिटल वर्सेटायल डिस्क"
+      },
+      "Options": {
+        "English": [
+          " Digital video Disk",
+          "Degraded video Disk",
+          " None of these "
+        ],
+        "Hindi": [
+          "डिजिटल वीडियो डिस्क",
+          "ख़राब वीडियो डिस्क",
+          " इनमें से कोई नहीं"
+        ]
+      }
+    },
+    "Q_5": {
+      "Question": {
+        "English": "What is the motherboard?",
+        "Hindi": "मदरबोर्ड क्या है?"
+      },
+      "Answer": { "English": "Hardware", "Hindi": "हार्डवेयर" },
+      "Options": {
+        "English": ["Software", "C.P.U", " Operating System"],
+        "Hindi": ["सॉफ़्टवेयर", "C.P.U", "ऑपरेटिंग सिस्टम"]
+      }
+    },
+    "Q_6": {
+      "Question": {
+        "English": " Major characteristic of computer are ?",
+        "Hindi": "कंप्यूटर की प्रमुख विशेषता है?"
+      },
+      "Answer": { "English": "All of the above", "Hindi": "ऊपर के सभी" },
+      "Options": {
+        "English": [" Accuracy", " Storage capacity ", " Speed "],
+        "Hindi": ["शुद्धता", "भंडारण क्षमता", " गति"]
+      }
+    },
+    "Q_7": {
+      "Question": {
+        "English": "Limitation of computer is?",
+        "Hindi": "कंप्यूटर की सीमा क्या है?"
+      },
+      "Answer": { "English": "No feelings", "Hindi": "कोई भावना नहीं" },
+      "Options": {
+        "English": ["Non-accurate ", "Slow calculating", "No automation"],
+        "Hindi": [" गैर सही", "धीमी गणना", "कोई स्वचालन नहीं"]
+      }
+    },
+    "Q_8": {
+      "Question": {
+        "English": " Devices by which the results obtained from the computer are called _______ devices?",
+        "Hindi": "वे उपकरण जिनके द्वारा कम्‍प्‍यूटर से प्राप्‍त परिणामों को प्राप्‍त किया जाता हैं _______ डिवाइसेज कहलाती हैं।"
+      },
+      "Answer": { "English": "Output devices", "Hindi": "आउटपुट डिवाइस" },
+      "Options": {
+        "English": [" Input devices", " Indirect devices ", " None of these"],
+        "Hindi": ["इनपुट डिवाइस", "इनडाइरेक्ट डिवाइस", " इनमें से कोई नहीं"]
+      }
+    },
+    "Q_9": {
+      "Question": {
+        "English": "Which of the following is the first computer?",
+        "Hindi": "निम्नलिखित में से कौन पहला कंप्यूटर है?"
+      },
+      "Answer": { "English": "Abacus", "Hindi": "अबेकस" },
+      "Options": {
+        "English": [" Napier bones", " Slide rule", " Pascaline"],
+        "Hindi": ["नेपियर हड्डियाँ", "स्लाइड नियम", "पास्कलाइन"]
+      }
+    },
+    "Q_10": {
+      "Question": {
+        "English": "Full form of ENIAC?",
+        "Hindi": "ENIAC का पूर्ण रूप क्या है"
+      },
+      "Answer": {
+        "English": "Electronic numerical integrator and calculator",
+        "Hindi": "इलेक्ट्रॉनिक संख्यात्मक इंटीग्रेटर और कैलकुलेटर"
+      },
+      "Options": {
+        "English": [
+          " Electrical numerical integrator and calculator",
+          " Electrical numerical integrating and calculating",
+          " None of these"
+        ],
+        "Hindi": [
+          "विद्युत संख्यात्मक इंटीग्रेटर और कैलकुलेटर",
+          "विद्युत संख्यात्मक एकीकरण और गणना",
+          "इनमें से कोई नहीं"
+        ]
+      }
+    },
+    "Q_11": {
+      "Question": {
+        "English": "Which of the following is output device?",
+        "Hindi": "निम्नलिखित में से कौन सा आउटपुट डिवाइस है?"
+      },
+      "Answer": { "English": "Monitor", "Hindi": "मांनीटर" },
+      "Options": {
+        "English": [" Keyboard", " Mouse", " Microphone"],
+        "Hindi": ["कीबोर्ड", "माउस", "माइक्रोफ़ोन"]
+      }
+    },
+    "Q_12": {
+      "Question": {
+        "English": "What is the full form of CRT?",
+        "Hindi": "CRT का पूर्ण रूप क्या है?"
+      },
+      "Answer": { "English": "Cathode Ray Tube", "Hindi": "कैथोड रे ट्यूब" },
+      "Options": {
+        "English": [
+          " Cactius Resolution Tube",
+          "Calculating Resolution Television",
+          " Calculating Ray Television"
+        ],
+        "Hindi": [
+          "कैक्टियस रेजोल्यूशन ट्यूब",
+          "रिज़ॉल्यूशन टेलीविज़न की गणना",
+          "रे टेलीविजन की गणना"
+        ]
+      }
+    },
+    "Q_13": {
+      "Question": {
+        "English": "What is the full form of LED?",
+        "Hindi": "एलईडी का पूर्ण रूप क्या है"
+      },
+      "Answer": {
+        "English": "Light Emiting Diode",
+        "Hindi": "प्रकाश उत्सर्जक डायोड"
+      },
+      "Options": {
+        "English": [
+          " Liquid Crystal Display",
+          "Liquid Edit Diode",
+          " Liquid Emitting Diode"
+        ],
+        "Hindi": [
+          "लिक्विड क्रिस्टल डिस्प्ले",
+          "तरल संपादन डायोड",
+          "तरल उत्सर्जक डायोड"
+        ]
+      }
+    },
+    "Q_14": {
+      "Question": {
+        "English": "What is the full form of CD-ROM?",
+        "Hindi": "CD-ROM का पूर्ण रूप क्या है?"
+      },
+      "Answer": {
+        "English": "Compact Disk Read Only Memory",
+        "Hindi": "कॉम्पैक्ट डिस्क रीड ओनली मेमोरी"
+      },
+      "Options": {
+        "English": ["Cancelation Disk", "Continuty Disk", " None of these"],
+        "Hindi": ["रद्दीकरण डिस्क", "निरंतरता डिस्क", " इनमें से कोई नहीं"]
+      }
+    },
+    "Q_15": {
+      "Question": {
+        "English": "What is the Microsoft Word is?",
+        "Hindi": "Microsoft Word क्या है?"
+      },
+      "Answer": { "English": "Software", "Hindi": " सॉफ्टवेयर" },
+      "Options": {
+        "English": [" Hardware", " Hardware + software", "Operating System"],
+        "Hindi": ["हार्डवेयर", "हार्डवेयर + सॉफ्टवेयर", "ऑपरेटिंग सिस्टम"]
+      }
+    },
+    "Q_16": {
+      "Question": {
+        "English": "Which of the following are types of programming language?",
+        "Hindi": "निम्नलिखित में से कौन सी प्रोग्रामिंग भाषा के प्रकार हैं?"
+      },
+      "Answer": {
+        "English": "Low level language,High level lanaguage",
+        "Hindi": "निम्न स्तर की भाषा, उच्च स्तरीय भाषा"
+      },
+      "Options": {
+        "English": [
+          "Small, Big",
+          " High level lanaguage ",
+          " Low level language "
+        ],
+        "Hindi": ["छोटा बड़ा", "उच्च स्तरीय भाषा", "निम्न स्तर की भाषा"]
+      }
+    }
+  },
+  "chapter2": {},
+  "chapter3": {
+    "Q_1": {
+      "Question": {
+        "English": "If you want to share a document and you want people to just see it and not edit it, then who should you use?",
+        "Hindi": "यदि आप एक दस्तावेज़ साझा करना चाहते हैं और आप चाहते हैं कि लोग इसे केवल देखें और इसे संपादित न करें, तो आपको किसका उपयोग करना चाहिए?"
+      },
+      "Answer": { "English": "PDF", "Hindi": "PDF" },
+      "Options": {
+        "English": ["DOC", "ODT", "DOCX"],
+        "Hindi": ["DOC", "ODT", "DOCX"]
+      }
+    },
+    "Q_2": {
+      "Question": {
+        "English": "LibreOffice Writer What is the shortcut of a hyperlink?",
+        "Hindi": "लिबर ऑफिस राइटर हाइपरलिंक का शॉर्टकट क्या है?"
+      },
+      "Answer": { "English": "Ctrl + K", "Hindi": "Ctrl + K" },
+      "Options": {
+        "English": ["Ctrl + H", "Ctrl + L", "Ctrl + Shift + H"],
+        "Hindi": ["Ctrl + H", "Ctrl + L", "Ctrl + Shift + H"]
+      }
+    }
+  },
+  "chapter4": {},
+  "chapter5": {},
+  "chapter6": {
+    "Q_1": {
+      "Question": {
+        "English": "Total numbers of layers in OSI reference model is?",
+        "Hindi": "OSI संदर्भ मॉडल में परतों की कुल संख्या है?"
+      },
+      "Answer": { "English": "7", "Hindi": "7" },
+      "Options": { "English": ["4", "9", "5"], "Hindi": ["4", "9", "5"] }
+    },
+    "Q_2": {
+      "Question": {
+        "English": "What is the first webpage of website called?",
+        "Hindi": "वेबसाइट का पहला वेबपेज क्या कहलाता है?"
+      },
+      "Answer": { "English": "home page", "Hindi": "होम पेज" },
+      "Options": {
+        "English": ["Main page", "First page", "None of these"],
+        "Hindi": ["मुख्य पृष्ठ", "प्रथम", "इनमें से कोई नहीं"]
+      }
+    },
+    "Q_3": {
+      "Question": {
+        "English": "Which of the following is a standard network protocol used to transfer the files between client and server?",
+        "Hindi": "क्लाइंट और सर्वर के बीच फ़ाइलों को स्थानांतरित करने के लिए निम्न में से कौन सा एक मानक नेटवर्क प्रोटोकॉल है?"
+      },
+      "Answer": { "English": "FTP", "Hindi": "FTP" },
+      "Options": {
+        "English": ["SMTP", "IP", "STTP"],
+        "Hindi": ["SMTP", "IP", "STTP"]
+      }
+    },
+    "Q_4": {
+      "Question": {
+        "English": "MAC address is of?",
+        "Hindi": "मैक एड्रेस है?"
+      },
+      "Answer": { "English": "48 bits", "Hindi": "48 bits" },
+      "Options": {
+        "English": ["36 bits", "42 bits", "24 bits"],
+        "Hindi": ["36 bits", "42 bits", "24 bits"]
+      }
+    }
+  },
+  "chapter7": {},
+  "chapter8": {},
+  "chapter9": {}
+}
