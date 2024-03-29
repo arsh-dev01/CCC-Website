@@ -85,17 +85,6 @@ NextQuestionButton.addEventListener("click", () => {
     NextQuestionButton.classList.replace("NextQuestion", "SubmitAnswers");
     let QuestionSubmitBtn = document.querySelector(".SubmitAnswers");
     QuestionSubmitBtn.addEventListener("click", () => {
-      // StudentResultObject.QuestionType = localStorage.getItem("QuestionType");
-      // StudentResultObject.TotalRightAnswer = RightAnswer();
-      // StudentResultObject.Time = Timestr;
-      // StudentResultObject.TotalQuestion = TotalNumberOfQuesiton;
-      // if (StudentNameValue != undefined) {
-      //   StudentResultObject.StudentName = StudentNameValue;
-      // }
-      // localStorage.setItem(
-      //   `${today}-${Student}`,
-      //   JSON.stringify(StudentResultObject)
-      // );
       if (ResultObject[today] == null) {
         ResultObject[today] = {};
       }
@@ -115,6 +104,8 @@ NextQuestionButton.addEventListener("click", () => {
       }
       console.log(ResultObject);
       localStorage.setItem("Results", JSON.stringify(ResultObject));
+      localStorage.setItem("RightAnswer", RightAnswer());
+      localStorage.setItem("TotalQuestions", TotalNumberOfQuesiton);
       // window.open("ResultDisplay.html", "_self");
     });
   }
