@@ -48,11 +48,11 @@ body {
   position: relative;
 }
 .ProcessBar .Percente {
-  top:0 ;
-  color: var(--Whitest);
+  top: 0;
+  color: var(--Balackes);
 }
 .ProcessBackgrond {
-  background-color: green;
+  background-color: var(--ResultRight);
   width: 50%;
   height: 100%;
 }
@@ -83,5 +83,5 @@ body {
   background-color: rgb(121, 141, 255);
 }
 .Worng {
-  background-color: rgb(252, 119, 119);
+  background-color: var(--Worng);
 }
