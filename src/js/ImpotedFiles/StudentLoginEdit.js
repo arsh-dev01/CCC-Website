@@ -1,4 +1,3 @@
-
 let StudentEditBox = document.querySelectorAll(".StudentLoginPreviewBox");
 let StudentNumberBox = document.querySelectorAll(".StudentNumber");
 let StudentEditPassword = document.querySelector(".StudentLoginPassword");
@@ -6,7 +5,6 @@ let StudentNumber = 0;
 let StudentLoginBotton = document.querySelector(".StudentLoginButton");
 let AdminObject = JSON.parse(localStorage.getItem("AdminInfo"));
 let StudentNumberForPenal;
-console.log(AdminObject);
 StudentNumberBox.forEach((Number) => {
   StudentNumber++;
   Number.innerHTML = StudentNumber;
@@ -37,7 +35,10 @@ StudentLoginBotton.addEventListener("click", () => {
         }
       }
     });
-    localStorage.setItem("AdminInfo", JSON.stringify(AdminObject));
+    if (confirm("Change Student Password")) {
+      localStorage.setItem("AdminInfo", JSON.stringify(AdminObject));
+    }
+    document.querySelector("input").value = "";
   } else {
     alert("Enter Student Password!!");
   }

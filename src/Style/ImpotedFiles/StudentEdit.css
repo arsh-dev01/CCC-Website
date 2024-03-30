@@ -1,22 +1,25 @@
-
 @import url(../LinkedFiles/Color.css);
-body{
-background-color: var(--Whitest);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: ArshnoorBold;
 }
-
-:root {
-  --Whitest: #EEEEEE;
-  --SkyBlues: #76ABAE;
-  --Grayes:#31363F;
-  --Balackes:#222831;
-
+body {
+  background-color: var(--Whitest);
+}
+main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
 }
 main .StudentAllLoginBox {
   position: relative;
   left: 3vw;
   width: 50vw;
   height: 50vw;
-  background-color: var(--Grayes)  !important;
+  background-color: var(--Grayes);
   backdrop-filter: blur(4px);
   border-radius: 3vw;
   display: grid;
@@ -24,20 +27,21 @@ main .StudentAllLoginBox {
   grid-template-columns: auto auto auto auto;
   grid-template-rows: auto auto auto auto;
   padding: 4vw 3vw;
-  /* padding-top: ; */
 }
+/* main .StudentAllLoginBox .StudentLoginPreviewBox i{
+} */
 main .StudentAllLoginBox .StudentLoginPreviewBox {
   width: 10vw;
   height: 10vw;
   border-radius: 2vw;
-  /* background-color: #f3f3f3; */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   cursor: pointer;
   transition: 0.2s;
-  background-color: var(--Grayes)  !important;
+  background-color: var(--Whitest);
+  color: var(--Balackes);
 }
 main .StudentAllLoginBox .StudentLoginPreviewBox:hover {
   outline: 5px solid #1a1919bb;
@@ -45,9 +49,10 @@ main .StudentAllLoginBox .StudentLoginPreviewBox:hover {
 .StudentLoginPreviewBox:active {
   transform: scale(0.97);
 }
-main .StudentAllLoginBox .StudentLoginPreviewBox img {
+main .StudentAllLoginBox .StudentLoginPreviewBox i {
   display: inline-block;
-  width: 5vw;
+  font-size: 2.8vw;
+  margin-bottom: 1vw;
 }
 main .StudentAllLoginBox .StudentLoginPreviewBox .StudentLoginHadding,
 main span {
@@ -59,23 +64,27 @@ main .StudentLoginPenal {
   display: none;
 }
 .PenalLoginDisplayFlex {
-  display: flex !important ;
+  transition: all .2s;
+  display: flex !important;
   width: 30vw;
   height: 30vw;
   border-radius: 4vw;
   position: relative;
-  top: -2vh;
-  right: 5vw;
+  /* top: -2vh; */
   float: right;
-  /* background-color: rgba(255, 255, 255, 0.493); */
-  backdrop-filter: blur(2px);
+  background-color: var(--Grayes);
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  color: var(--Whitest);
+  left: 11vw;
 }
-main .StudentLoginPenal img {
-  border-radius: 10vw;
-  width: 10vw;
+main .StudentLoginPenal .UserLogin {
+  font-size: 6vw;
+  background-color: var(--Whitest);
+  color: var(--SkyBlues);
+  border-radius: 50%;
+  padding: 1vw;
   position: relative;
   top: -3vw;
 }
@@ -95,7 +104,7 @@ main .StudentLoginPenal input[type="password"],
 }
 main .StudentLoginPenal input[type="password"]:focus,
 .StudentLoginPassword:focus {
-  outline: 2.5px solid #800080;
+  outline: 2.5px solid var(--SkyBlues);
 }
 main .StudentLoginPenal button {
   padding: 1vw 2vw;
@@ -103,7 +112,9 @@ main .StudentLoginPenal button {
   border: none;
   position: relative;
   top: 1.5vw;
-  /* background-color: #5bb6eb; */
+  background-color: var(--SkyBlues);
+  border: 2px solid var(--Grayes);
+  outline: 2px solid var(--SkyBlues);
   cursor: pointer;
 }
 main .StudentLoginPenal button:active {
@@ -112,7 +123,7 @@ main .StudentLoginPenal button:active {
 .CheckBoxLabel {
   position: absolute;
   height: 2vw;
-  width: 10vw;
+  width: 12vw;
   top: 1vw;
   right: 2vw;
   display: flex;
