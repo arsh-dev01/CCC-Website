@@ -13,9 +13,8 @@ let StudentResultObject = {
   TotalQuestion: "",
   TotalRightAnswer: "",
 };
-// console.log(today);
 //<<<<<<<<<<<<<<<<<<Select Result box >>>>>>>>>>>>>>>>>>>>>
-let ResultBody = document.querySelector(".ResultMainBox");
+let ResultBody = document.querySelector(".ResultData");
 //<<<<<<<<Create Element And Append In Result Box and Fill Data >>>>>>>
 const CreateRow = (
   StudentName,
@@ -117,13 +116,12 @@ const CreateRow = (
 //   );
 // }
 // >>>>>>>>>>>>>>>Fetching Student result Data on Function call-=======>>>
-const ResultShow = (Result, SrNo, Student, day) => {
+const ResultShow = (Result, day, Student, Time, SrNo) => {
   let StudentName = Result.StudentName;
   let QuestionType = Result.QuestionType;
   let TotalQuestion = Result.TotalQuestion;
   let TotalRightAnswer = Result.TotalRightAnswer;
   let ChapterNumber = Result.ChapterNumber;
-  let Time = Result.Time;
   CreateRow(
     StudentName,
     QuestionType,
@@ -139,19 +137,22 @@ const ResultShow = (Result, SrNo, Student, day) => {
 let Result;
 const ResultLoop = (day) => {
   let SrNo = 1;
-  console.log(day);
   if (SrNo > 12) {
     SrNo = 1;
   }
-  for (let i = 1; i <= 12; i++) {
-    Result = localStorage.getItem(`${day}-Student${i}`);
-    let Student = `Student${i}`;
-
-    if (Result != null) {
-      ResultShow(JSON.parse(Result), SrNo, Student, day);
-      SrNo++;
-    } else {
-      continue;
+  Result = JSON.parse(localStorage.getItem("Results"));
+  if (Result[day]) {
+    let TimerArr = Object.keys(Result[day]);
+    for (let i = 0; i < TimerArr.length; i++) {
+      let Time = TimerArr[i];
+      for (let i = 1; i <= 12; i++) {
+        let Student = `Student${i}`;
+        if (Result[day][Time][Student]) {
+          let StudneObj = Result[day][Time][Student];
+          ResultShow(StudneObj, day, Student, Time, SrNo);
+          SrNo++;
+        }
+      }
     }
   }
 };
@@ -160,8 +161,7 @@ ResultLoop(today);
 export { today, CreateRow };
 let DateInput = document.querySelector(".Date");
 DateInput.addEventListener("change", (e) => {
-  let ResultData = document.querySelector(".ResultData");
-  ResultData.innerHTML = "";
+  ResultBody.innerHTML = "";
   let DateValue = e.target.value;
   ResultLoop(DateValue);
 });

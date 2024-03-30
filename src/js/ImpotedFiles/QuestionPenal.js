@@ -79,7 +79,7 @@ NextQuestionButton.addEventListener("click", () => {
     QuestionNumber("Next", Queston_number_Show);
     MainFunction();
   }
-  TotalNumberOfQuesiton = 4;
+  TotalNumberOfQuesiton = 20;
   if (Queston_number_Show == TotalNumberOfQuesiton) {
     NextQuestionButton.innerText = "Submit";
     NextQuestionButton.classList.replace("NextQuestion", "SubmitAnswers");
@@ -102,11 +102,10 @@ NextQuestionButton.addEventListener("click", () => {
       if (StudentNameValue != undefined) {
         ResultObject[today][Timestr][Student]["StudentName"] = StudentNameValue;
       }
-      console.log(ResultObject);
       localStorage.setItem("Results", JSON.stringify(ResultObject));
       localStorage.setItem("RightAnswer", RightAnswer());
       localStorage.setItem("TotalQuestions", TotalNumberOfQuesiton);
-      // window.open("ResultDisplay.html", "_self");
+      window.open("ResultDisplay.html", "_self");
     });
   }
 });
