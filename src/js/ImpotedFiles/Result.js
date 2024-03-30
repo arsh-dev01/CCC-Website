@@ -15,6 +15,7 @@ let StudentResultObject = {
 };
 //<<<<<<<<<<<<<<<<<<Select Result box >>>>>>>>>>>>>>>>>>>>>
 let ResultBody = document.querySelector(".ResultData");
+let LastTimer;
 //<<<<<<<<Create Element And Append In Result Box and Fill Data >>>>>>>
 const CreateRow = (
   StudentName,
@@ -29,8 +30,16 @@ const CreateRow = (
 ) => {
   // Start
   let Row = document.createElement("div");
-  ResultBody.appendChild(Row);
+  let TimeDiv = document.createElement("div");
   Row.classList.add("DataRow");
+  TimeDiv.classList.add("TimeBox");
+  TimeDiv.innerText = "Time - ";
+  if (LastTimer != Time) {
+    console.log(Time);
+    ResultBody.appendChild(TimeDiv);
+    TimeDiv.innerText += Time;
+  }
+  ResultBody.appendChild(Row);
   for (let i = 1; i <= 8; i++) {
     let Cell = document.createElement("h5");
     switch (i) {
@@ -51,6 +60,7 @@ const CreateRow = (
         break;
       case 3:
         if (Time != undefined && Time != "") {
+          LastTimer = Time;
           Cell.innerHTML = Time;
         } else {
           Cell.innerHTML = "-";

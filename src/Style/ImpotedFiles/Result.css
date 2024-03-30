@@ -21,7 +21,7 @@ main .ResultMainBox {
   border: 0.2vw solid black;
   display: grid;
   grid-template-columns: auto;
-  grid-template-rows: 6vh repeat(12,3.6vw);
+  grid-template-rows: 6vh auto;
   overflow: hidden;
   position: relative;
 }
@@ -41,6 +41,13 @@ main .ResultMainBox .DataHadding,
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.ResultData {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: repeat(auto, 3.6vw);
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
 .Date {
   width: 11vw;
@@ -69,9 +76,6 @@ main .ResultMainBox .DataHadding,
   position: relative;
   top: 1.75vw;
   left: -87%;
-  /* top: 0; */
-  /* left: -87%; */
-  /* height: 100%; */
 }
 .Position2 {
   left: -77%;
@@ -90,4 +94,13 @@ main .ResultMainBox .DataHadding,
 }
 .Position7 {
   left: -14%;
+}
+.TimeBox {
+  width: 100%;
+  height: 4vh;
+  backdrop-filter: blur(2px);
+  display: grid;
+  place-content: center;
+  color: var(--Balackes);
+  background-color: rgba(163, 159, 159, 0.811);
 }
