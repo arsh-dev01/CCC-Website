@@ -84,7 +84,8 @@ function QuestionNumber(BtnType, NumberForQuestion) {
   QuesitonNumberForCheckAnswer = QuestionNumberValue;
 }
 //<<====================== Fetching Data From LocalStorege and createing Object===============>>
-let QuestionObject = JSON.parse(localStorage.getItem("Questiontext"));
+// let QuestionObject = JSON.parse(localStorage.getItem("Questiontext"));
+import { QuestionAPI as QuestionObject } from "./QuestionAndAdminInfo.js";
 const userId = QuestionObject;
 
 //<<============== Full Object ,Question,Options,Answers Are Exportiong !!!!=================>>>

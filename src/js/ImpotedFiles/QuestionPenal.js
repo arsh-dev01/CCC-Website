@@ -103,7 +103,7 @@ NextQuestionButton.addEventListener("click", () => {
         ResultObject[today][Timestr][Student]["StudentName"] = StudentNameValue;
       }
       localStorage.setItem("Results", JSON.stringify(ResultObject));
-      localStorage.setItem("RightAnswer", RightAnswer()||0);
+      localStorage.setItem("RightAnswer", RightAnswer() || 0);
       localStorage.setItem("TotalQuestions", TotalNumberOfQuesiton);
       window.open("ResultDisplay.html", "_self");
     });
@@ -136,32 +136,40 @@ const MainFunction = () => {
 
   EnglishQuestionElement.innerText = QuestionInEnglish;
   if (QuestionInHindi) {
-    HindiQuestionElement.innerText = QuestionInHindi;
+    HindiQuestionElement.innerText = `(${QuestionInHindi})`;
   }
   // Answer
   const WriteAnswer = () => {
-    let OptionRandomIndex;
     if (
-      Answer["English"] != "All of the above" ||
-      Answer["English"] != "None of these"
+      Answer["English"] == "All of the these" ||
+      Answer["English"] == "None of these"
     ) {
-      OptionRandomIndex = Math.floor(Math.random() * 4);
+      console.log(Answer["English"]);
+      Answers(3);
     } else {
-      console.log("Yes Right")
-      OptionRandomIndex = OptionsElementObject.length - 1;
+      let OptionRandomIndex;
+      OptionRandomIndex = Math.floor(Math.random() * 4);
+      Answers(OptionRandomIndex);
     }
+  };
+  let Answers = (OptionRandomIndex) => {
     //  EnglishOptionElement
     OptionsElementObject[
       OptionRandomIndex
     ].children[0].children[0].children[0].innerText = Answer["English"];
     //   HindiOptionElement
-    OptionsElementObject[
-      OptionRandomIndex
-    ].children[0].children[0].children[1].children[0].innerText =
-      Answer["Hindi"];
+    if (Answer["Hindi"] != "" && Answer["Hindi"] != Answer["English"]) {
+      OptionsElementObject[
+        OptionRandomIndex
+      ].children[0].children[0].children[1].children[0].innerText = `(${Answer["Hindi"]})`;
+    } else {
+      OptionsElementObject[
+        OptionRandomIndex
+      ].children[0].children[0].children[1].children[0].innerText = "";
+    }
+
     RightAnswerElement = OptionsElementObject[OptionRandomIndex];
   };
-
   WriteAnswer();
   let OptionIndex = 0;
   OptionsElementObject.forEach((Element) => {
@@ -170,7 +178,14 @@ const MainFunction = () => {
     let EleHindi = Element.children[0].children[0].children[1].children[0];
     if (EleEnglish.innerText != Answer["English"]) {
       EleEnglish.innerText = OptionsInEnglish[OptionIndex];
-      EleHindi.innerText = OptionsInHindi[OptionIndex];
+      if (
+        OptionsInHindi[OptionIndex] != "" &&
+        OptionsInHindi[OptionIndex] != OptionsInEnglish[OptionIndex]
+      ) {
+        EleHindi.innerText = `(${OptionsInHindi[OptionIndex]})`;
+      } else {
+        EleHindi.innerText = "";
+      }
       OptionIndex++;
     }
   });
