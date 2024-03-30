@@ -61,7 +61,10 @@ function QuestionNumber(BtnType, NumberForQuestion) {
         PreviwesTime--;
       }
     }
-    localStorage.setItem("QuestionobjReprort",JSON.stringify(PreViwesQuetionsObject))
+    localStorage.setItem(
+      "QuestionobjReprort",
+      JSON.stringify(PreViwesQuetionsObject)
+    );
   } else if (BtnType == "Previwes") {
     QuestionNumberValue =
       PreViwesQuetionsObject.QuesitonNum[NumberForQuestion - 1];
@@ -93,5 +96,6 @@ export {
   OptionsInEnglish,
   OptionsInHindi,
   Answer,
-  QuesitonNumberForCheckAnswer,h
+  QuesitonNumberForCheckAnswer,
+  h,
 };

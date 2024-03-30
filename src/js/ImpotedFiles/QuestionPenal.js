@@ -79,7 +79,7 @@ NextQuestionButton.addEventListener("click", () => {
     QuestionNumber("Next", Queston_number_Show);
     MainFunction();
   }
-  TotalNumberOfQuesiton = 20;
+  TotalNumberOfQuesiton = 2;
   if (Queston_number_Show == TotalNumberOfQuesiton) {
     NextQuestionButton.innerText = "Submit";
     NextQuestionButton.classList.replace("NextQuestion", "SubmitAnswers");
@@ -103,7 +103,7 @@ NextQuestionButton.addEventListener("click", () => {
         ResultObject[today][Timestr][Student]["StudentName"] = StudentNameValue;
       }
       localStorage.setItem("Results", JSON.stringify(ResultObject));
-      localStorage.setItem("RightAnswer", RightAnswer());
+      localStorage.setItem("RightAnswer", RightAnswer()||0);
       localStorage.setItem("TotalQuestions", TotalNumberOfQuesiton);
       window.open("ResultDisplay.html", "_self");
     });
@@ -135,10 +135,21 @@ const MainFunction = () => {
   let HindiQuestionElement = HindiQuestionElementObject.children[0];
 
   EnglishQuestionElement.innerText = QuestionInEnglish;
-  HindiQuestionElement.innerText = QuestionInHindi;
+  if (QuestionInHindi) {
+    HindiQuestionElement.innerText = QuestionInHindi;
+  }
   // Answer
   const WriteAnswer = () => {
-    let OptionRandomIndex = Math.floor(Math.random() * 4);
+    let OptionRandomIndex;
+    if (
+      Answer["English"] != "All of the above" ||
+      Answer["English"] != "None of these"
+    ) {
+      OptionRandomIndex = Math.floor(Math.random() * 4);
+    } else {
+      console.log("Yes Right")
+      OptionRandomIndex = OptionsElementObject.length - 1;
+    }
     //  EnglishOptionElement
     OptionsElementObject[
       OptionRandomIndex
