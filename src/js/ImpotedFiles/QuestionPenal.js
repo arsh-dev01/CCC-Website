@@ -79,7 +79,7 @@ NextQuestionButton.addEventListener("click", () => {
     QuestionNumber("Next", Queston_number_Show);
     MainFunction();
   }
-  TotalNumberOfQuesiton = 2;
+  // TotalNumberOfQuesiton = 2;
   if (Queston_number_Show == TotalNumberOfQuesiton) {
     NextQuestionButton.innerText = "Submit";
     NextQuestionButton.classList.replace("NextQuestion", "SubmitAnswers");

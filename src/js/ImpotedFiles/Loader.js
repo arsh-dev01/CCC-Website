@@ -5,7 +5,7 @@ Loader.classList.add("loader");
 LoaderBody.classList.add("LoaderBody");
 let link = document.createElement("link");
 link.rel = "stylesheet";
-link.href = "src/Style/LinkedFiles/Loader.css";
+link.href = "../src/Style/LinkedFiles/Loader.css";
 Loader.appendChild(link);
 LoaderBody.appendChild(Loader);
 document.querySelector("body").appendChild(LoaderBody);
