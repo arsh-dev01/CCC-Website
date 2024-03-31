@@ -37,6 +37,7 @@ StudentLoginBotton.addEventListener("click", () => {
     });
     if (confirm("Change Student Password")) {
       localStorage.setItem("AdminInfo", JSON.stringify(AdminObject));
+      window.open("AfterAdminLogin.html"), "_self";
     }
     document.querySelector("input").value = "";
   } else {
