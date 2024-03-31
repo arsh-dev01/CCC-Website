@@ -1,7 +1,6 @@
+@import url(../LinkedFiles/Color.css);
 body {
-  /* background: url(../../Images/BackGround/AfterAdmin.jpg) center/cover !important; */
-  background: #b3b2b2;
-  background-repeat: no-repeat;
+  background-color: var(--Whitest);
 }
 main {
   width: 100vw;
@@ -17,7 +16,7 @@ main .AdminEditElementContaner {
   width: 40vw;
   height: 78vh;
   backdrop-filter: blur(0.2vw);
-  background: linear-gradient(30deg, #d4c3c3,#8d8383);
+  background: var(--Grayes);
   border-radius: 3vw;
   position: relative;
   top: 2vw;
@@ -31,15 +30,16 @@ main .AdminEditElementContaner h2 {
   text-align: center;
   position: relative;
   top: 2vw;
+  color: var(--Whitest);
 }
-main .AdminEditElementContaner input{
-  width:30vw;
+main .AdminEditElementContaner input {
+  width: 30vw;
   height: 0;
   padding: 1vw;
   border-radius: 0.5vw;
   border: none;
   background-color: transparent;
-  border: 3px solid #adadad ;
+  border-bottom: 3px solid var(--Whitest);
   margin-left: 5vw;
   float: right;
   transform: scale(0.95);
@@ -59,7 +59,7 @@ main .AdminEditElementContaner .AdminInstitutNameLabel input {
 }
 main .AdminEditElementContaner input:focus {
   outline: none;
-  border: 3px solid #3586ff ;
+  border-bottom: 3px solid var(--SkyBlues);
   height: 4vw;
   background-color: white;
   transform: scale(1);
@@ -74,29 +74,33 @@ main .AdminEditElementContaner .AdminEditSubmitButton {
   position: relative;
   bottom: 3vw;
   transform: scale(0.97);
+  background-color: var(--SkyBlues);
 }
 main .AdminEditElementContaner .AdminEditSubmitButton:hover {
   transform: scale(1);
-  outline: 4px solid #1d72f180;
 }
 main .AdminEditElementContaner .AdminEditSubmitButton:active {
   transform: scale(0.98);
 }
 i {
-  top: 0.6vw;
-  color: rgb(231, 112, 255) !important;
+  top: .1vw;
+  color: var(--Grayes);
 }
 .FocusonIcons {
-  top: 1.2vw !important;
+  top: 1vw !important;
 }
 input.Focused {
   outline: none !important;
   height: 4vw !important;
-  background-color: white !important;
+  background-color: var(--Whitest) !important;
   transform: scale(1) !important;
   transition: none !important;
 }
 .Focused:focus {
   border: none !important;
   border-bottom: 3px solid #3586ff !important;
+}
+label:nth-child(3) input,label:nth-child(4) input,label:nth-child(5) input{
+  position: relative;
+  right: 1vw;
 }

@@ -73,6 +73,7 @@ if (AdminObject) {
   UserName.classList.add("Focused");
   Password.classList.add("Focused");
 
+  Icons[0].classList.add("FocusonIcons");
   // Inputing
   Institution.value = InstitutionValue;
   UserName.value = UserNameValue;
@@ -80,28 +81,20 @@ if (AdminObject) {
 }
 
 SubmitButton.onclick = () => {
-  // console.log("Institution", Institution.value);
-  // console.log("UserName", UserName.value);
-  // console.log("Password", Password.value);
-  // console.log("ConformPassword", ConformPassword.value);
-  // console.log(InstitutionValue);
-  // console.log(UserNameValue);
-  // console.log(PasswordValue);
   let Empty = true;
   Inputs.forEach((e) => {
-    // console.dir(e.value);
     if (e.value == "" && Empty) {
       Empty = false;
       alert(e.attributes.placeholder.nodeValue);
     }
   });
+  console.log(Empty);
   if (Password.value != ConformPassword.value && Empty) {
     alert("Password are not Matched!!");
-  } else {
+  } else if (Password.value == ConformPassword.value && Empty) {
     AdminObject.Admin.Institution = Institution.value;
     AdminObject.Admin.AdminUserName = UserName.value;
     AdminObject.Admin.AdminPassword = Password.value;
-    console.log(AdminObject);
     alert("Changes are Saved>>");
     localStorage.setItem("AdminInfo", JSON.stringify(AdminObject));
   }

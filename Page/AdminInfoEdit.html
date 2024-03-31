@@ -17,14 +17,33 @@
         <div class="HeaderContenar">
           <div class="headerLogodiv">Code - Stack</div>
           <nav class="Nav">
-            <a href="AfterStudentLogin.html" class="navBtn OLavel">Home</a>
-            <a href="#" class="navBtn CCC" >Report</a>
-            <a href="#" class="navBtn About">About</a>
-            <a href="StudentLoginspage.html" class="navBtn Admin">Logout</a>
+            <button
+              class="navBtn OLavel"
+              onclick="window.open('AfterAdminLogin.html','_self')"
+            >
+              Home
+            </button>
+            <button
+              class="navBtn Report"
+              onclick="window.open('Report.html','_self')"
+            >
+              Report
+            </button>
+            <button
+              class="navBtn About"
+              onclick="window.open('AfterStudentLogin.html','_self')"
+            >
+              About
+            </button>
+            <button
+              class="navBtn Admin"
+              onclick="window.open('StudentLoginspage.html','_self')"
+            >
+              Logout
+            </button>
           </nav>
         </div>
       </div>
-      <script></script>
     </header>
     <main>
       <div class="AdminEditBox">
@@ -61,7 +80,6 @@
                 position: absolute;
                 right: 1.4vw;
                 cursor: pointer;
-                color: black;
               "
             ></i>
           </label>
@@ -81,7 +99,6 @@
                 position: absolute;
                 right: 1.4vw;
                 cursor: pointer;
-                color: black;
               "
             ></i>
           </label>
@@ -114,9 +131,9 @@
       PasswordIcons2.classList.toggle("fa-eye");
     });
   </script>
-  <script
+  <!-- <script
     type="module"
     src="../src/js/ImpotedFiles/WebsiteJavaScript.js"
-  ></script>
+  ></script> -->
   <script src="../src/js/ImpotedFiles/EditAdmin.js"></script>
 </html>
